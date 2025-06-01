@@ -9,8 +9,8 @@
 {
   font-family: 'Roboto Mono';
   font-style: normal;
-  font-weight: 400;
-  src: url('https://fonts.gstatic.com/s/robotomono/v22/L0x7DF4xlVMF-BfR8bXMIjhGq9ki.woff2') format('woff2');
+  font-weight: 100 700;
+  src: url('../font/RobotoMono-VariableFont_wght.ttf') format('truetype');
 }
 
 /* Header CSS */
