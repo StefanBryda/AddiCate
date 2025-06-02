@@ -1,3 +1,18 @@
+/* General Style */
+*
+{
+    margin: 0px;
+    font-family: 'Roboto Mono', monospace;
+}
+
+@font-face 
+{
+  font-family: 'Roboto Mono';
+  font-style: normal;
+  font-weight: 400;
+  src: url('https://fonts.gstatic.com/s/robotomono/v22/L0x7DF4xlVMF-BfR8bXMIjhGq9ki.woff2') format('woff2');
+}
+
 /* Header CSS */
 
 
