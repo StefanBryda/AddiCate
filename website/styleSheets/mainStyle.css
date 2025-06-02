@@ -1,0 +1,38 @@
+/* General Style */
+* 
+{
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto Mono', monospace;
+}
+
+@font-face 
+{
+  font-family: 'Roboto Mono';
+  font-style: normal;
+  font-weight: 100 700;
+  src: url('../font/RobotoMono-VariableFont_wght.ttf') format('truetype');
+}
+
+/* Header CSS */
+
+
+/* Home Page CSS */
+
+
+/* Navigation CSS */
+
+
+/* Experience CSS */
+
+
+/* Resources CSS */
+
+
+/* Game CSS */
+
+
+/* About Us CSS */
+
+
+/* Footer CSS */
