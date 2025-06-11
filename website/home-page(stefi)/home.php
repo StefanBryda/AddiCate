@@ -18,6 +18,7 @@
       </div>
     </div>
   </div>
+  
   <div class="sections-grid">
     <div class="section-box section-desc">
       <span class="section-title">Small desc of addiction</span>
