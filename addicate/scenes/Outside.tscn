@@ -1,0 +1,31 @@
+[gd_scene load_steps=5 format=3 uid="uid://beiba7xa6upk0"]
+
+[ext_resource type="PackedScene" uid="uid://oxxkfex7gohr" path="res://scenes/player.tscn" id="1_drucc"]
+[ext_resource type="Texture2D" uid="uid://c4vx44xqf33jl" path="res://assets/backgrounds/PNG/City4/Bright/City4.png" id="2_k7f4w"]
+[ext_resource type="PackedScene" uid="uid://c4p4qfw4a0g13" path="res://scenes/ground.tscn" id="3_m64sd"]
+[ext_resource type="PackedScene" uid="uid://cq2porugkeju4" path="res://scenes/door.tscn" id="4_rn6ye"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="City4" type="Sprite2D" parent="."]
+position = Vector2(386, -340)
+texture = ExtResource("2_k7f4w")
+
+[node name="City5" type="Sprite2D" parent="."]
+position = Vector2(-1534, -341)
+texture = ExtResource("2_k7f4w")
+
+[node name="Player" parent="." groups=["Player"] instance=ExtResource("1_drucc")]
+position = Vector2(-293, -35)
+
+[node name="Camera2D" type="Camera2D" parent="Player"]
+position = Vector2(-5, -130)
+
+[node name="Ground" parent="." instance=ExtResource("3_m64sd")]
+position = Vector2(739, 79)
+
+[node name="Door inside" parent="." instance=ExtResource("4_rn6ye")]
+position = Vector2(814, -14)
+
+[node name="Door field" parent="." groups=["Player"] instance=ExtResource("4_rn6ye")]
+position = Vector2(-1961, 0)

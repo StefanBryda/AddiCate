@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://cq2porugkeju4"]
+
+[ext_resource type="Script" uid="uid://drswh6bwurste" path="res://scripts/door_inside.gd" id="1_hpvv5"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_m64sd"]
+
+[node name="Door inside" type="Area2D"]
+script = ExtResource("1_hpvv5")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_m64sd")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
