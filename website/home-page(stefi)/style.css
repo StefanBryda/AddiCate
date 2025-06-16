@@ -15,14 +15,6 @@
   src: url('https://fonts.gstatic.com/s/robotomono/v22/L0x7DF4xlVMF-BfR8bXMIjhGq9ki.woff2') format('woff2');
 }
 
-body {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  background-color: #ededed;
-  color: #222;
-}
-
 /* NAVBAR STYLES */
 nav {
   width: 100vw;

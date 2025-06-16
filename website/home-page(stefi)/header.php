@@ -2,7 +2,7 @@
 // PHP code can go here if needed
 ?>
 
-<nav>
+<div class="home-nav">
   <div class="navbar-container">
     <div class="nav-logo">
       <img src="images/logo.png" alt="AddiCate Logo" style="height:28px;">
@@ -14,4 +14,4 @@
       <a href="#">Resources</a>
     </div>
   </div>
-</nav>
+</div>

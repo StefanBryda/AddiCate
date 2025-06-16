@@ -1,5 +1,5 @@
 <?php include 'header.php'; ?>
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="../styleSheets/mainStyle.css" type="text/css">
 
 <div class="main-content">
   <div class="hero-section">
