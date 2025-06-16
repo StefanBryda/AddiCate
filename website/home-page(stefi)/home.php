@@ -1,4 +1,4 @@
-<?php include 'header.php'; ?>
+<?php include './home-header.php'; ?>
 <link rel="stylesheet" href="../styleSheets/mainStyle.css" type="text/css">
 
 <div class="main-content">
@@ -11,14 +11,14 @@
       <!-- Purple cone/spotlight SVG background -->
       <div class="avatar-spotlight">
         <svg width="180" height="220" viewBox="0 0 180 220">
-          <ellipse cx="90" cy="200" rx="70" ry="18" fill="#b39ddb"/>
-          <polygon points="40,200 90,30 140,200" fill="#d1b3ff" opacity="0.7"/>
+          <ellipse cx="90" cy="200" rx="70" ry="18" fill="#b39ddb" />
+          <polygon points="40,200 90,30 140,200" fill="#d1b3ff" opacity="0.7" />
         </svg>
         <img src="images/avatar1.png" alt="Pixel Character" />
       </div>
     </div>
   </div>
-  
+
   <div class="sections-grid">
     <div class="section-box section-desc">
       <span class="section-title">Small desc of addiction</span>
@@ -37,4 +37,4 @@
   </div>
 </div>
 
-<?php include 'footer.php'; ?>
+<?php include './home-footer.php'; ?>
