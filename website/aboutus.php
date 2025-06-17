@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="../styleSheets/mainStyle.css" type="text/css">
+    <title>About us</title>
+    <link rel="stylesheet" href="./styleSheets/mainStyle.css" type="text/css">
 </head>
 
 <body>
-<header></header>
+<?php include 'header.php'; ?>
 
 <main>
     <h1 class="aboutus-title">About Us</h1>
@@ -25,7 +25,7 @@
             <div class="aboutus-box2"></div>
         
             <div class="aboutus-box3">
-                <img id="group-picutre" src="../About Us/images/group-picture.png" alt="group-picutre">
+                <img id="group-picutre" src="./images/group-picture.png" alt="group-picutre">
             </div>
             <div class="aboutus-box4">
                 <h3>Project Members</h3>
@@ -42,7 +42,7 @@
     </div>
 </main>
 
-<footer></footer>
+<?php include 'footer.php'; ?>
     
 </body>
 </html>

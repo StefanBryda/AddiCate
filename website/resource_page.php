@@ -10,6 +10,8 @@
 
 <body id="r-body">
 
+<?php include 'header.php'; ?>
+
     <div class="resource">
 
         <div class="r-heading">
@@ -68,6 +70,7 @@
         </div>
 
     </div>
+<?php include 'footer.php'; ?>
 
 </body>
 
