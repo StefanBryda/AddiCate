@@ -11,8 +11,7 @@
 <?php include 'header.php'; ?>
 
 <main>
-    <h1 class="aboutus-title">About Us</h1>
-
+    <h1 class="aboutus-title">About Us</h1> 
     <div class="aboutus-main-container">
             <div class="aboutus-box1">
                 <h3>Reasons for the Project</h3>

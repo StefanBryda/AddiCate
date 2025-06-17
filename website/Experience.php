@@ -12,7 +12,6 @@
 f   <?php include 'header.php'; ?>
 
     <main class="experience-main">
-
         <h1 class="experience-h1">Experience</h1>
         <section class="experience-grid">
             <div class="experience-textBox">
