@@ -8,7 +8,7 @@
     <title>Game Page</title>
 </head>
 
-<body id="game-body">
+<body>
     
 <?php include 'header.php'; ?>
 

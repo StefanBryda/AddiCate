@@ -1,5 +1,5 @@
 <header>
-  <a href=" ">
+  <a href="home.php">
     <img src="./images/logo.png" alt="AddiCate Logo" class="logo" />
   </a>
   <nav class="nav-links">
