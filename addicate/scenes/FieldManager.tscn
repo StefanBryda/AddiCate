@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://b57djsdv1alus"]
+
+[ext_resource type="Script" uid="uid://dmwio4eb5rr2o" path="res://scripts/field_manager.gd" id="1_dum0p"]
+
+[node name="Field1" type="Node2D"]
+script = ExtResource("1_dum0p")
