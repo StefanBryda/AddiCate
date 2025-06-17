@@ -26,7 +26,8 @@ html, body {
 
 body{
   min-height: 100vh;
-  display: flex;flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 /* Flex layout for page container */
