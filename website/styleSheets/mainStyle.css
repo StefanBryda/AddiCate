@@ -321,6 +321,7 @@ header {
 .experience-body {
   margin-left: 3%;
   margin-right: 3%;
+  padding-top: 60px; /* Clear the fixed header */
 }
 
 .experience-h1 {
@@ -559,6 +560,7 @@ li {
 
 /* About Us CSS */
 .aboutus-main-container {
+  padding-top: 60px; /* Clear the fixed header */
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
@@ -643,5 +645,8 @@ footer {
   padding: 15px;
   font-size: 14px;
   margin-top: auto;
-    width: 100vw;
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0px;
+  box-sizing: border-box;
 }
