@@ -1,5 +1,6 @@
-[gd_scene load_steps=6 format=3 uid="uid://born7gptsroo8"]
+[gd_scene load_steps=7 format=3 uid="uid://born7gptsroo8"]
 
+[ext_resource type="Script" uid="uid://bwptjx1ujakcs" path="res://scripts/field1.gd" id="1_q3786"]
 [ext_resource type="Texture2D" uid="uid://bke7joobfmby5" path="res://assets/backgrounds/field.png" id="1_uawk5"]
 [ext_resource type="PackedScene" uid="uid://oxxkfex7gohr" path="res://scenes/player.tscn" id="2_j00b8"]
 [ext_resource type="PackedScene" uid="uid://c4p4qfw4a0g13" path="res://scenes/ground.tscn" id="3_oa7lk"]
@@ -7,6 +8,7 @@
 [ext_resource type="Script" uid="uid://c37t5ha4w80m8" path="res://scripts/door_outside.gd" id="5_oa7lk"]
 
 [node name="Node2D" type="Node2D"]
+script = ExtResource("1_q3786")
 
 [node name="Field" type="Sprite2D" parent="."]
 position = Vector2(522, 339)

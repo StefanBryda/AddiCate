@@ -11,8 +11,7 @@
 <?php include 'header.php'; ?>
 
 <main>
-    <h1 class="aboutus-title">About Us</h1>
-
+    <h1 class="aboutus-title">About Us</h1> 
     <div class="aboutus-main-container">
             <div class="aboutus-box1">
                 <h3>Reasons for the Project</h3>
@@ -29,15 +28,15 @@
             </div>
             <div class="aboutus-box4">
                 <h3>Project Members</h3>
-                <p>
-                    - Stefania Panainte - Project Manager<br>
-                    - Eliza Horváth<br>
-                    - Airaa Srinivasan<br>
-                    - Stefan Bryda<br>
-                    - Miriam Cerulíková<br>
-                    - Aleksandra Sznajder<br>
-                    - Fabiana Brando<br>
-                </p>
+                    <ul>
+                        <li>Stefania Panainte – <em>Project Manager</em></li>
+                        <li>Eliza Horváth</li>
+                        <li>Airaa Srinivasan</li>
+                        <li>Stefan Bryda</li>
+                        <li>Miriam Cerulíková</li>
+                        <li>Aleksandra Sznajder</li>
+                        <li>Fabiana Brando</li>
+                    </ul>
             </div>
     </div>
 </main>

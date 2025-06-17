@@ -8,7 +8,7 @@
     <title>Resource Page</title>
 </head>
 
-<body id="r-body">
+<body>
 
 <?php include 'header.php'; ?>
 

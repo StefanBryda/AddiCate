@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=3 uid="uid://bjcrq7hiv7lsg"]
+
+[ext_resource type="Script" uid="uid://bdva70vh3pqam" path="res://scripts/field3.gd" id="1_veqw3"]
+[ext_resource type="Texture2D" uid="uid://bke7joobfmby5" path="res://assets/backgrounds/field.png" id="2_0hv08"]
+
+[node name="Field3" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 538.0
+offset_top = 207.0
+offset_right = 538.0
+offset_bottom = 207.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_veqw3")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_0hv08")
