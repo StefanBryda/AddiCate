@@ -14,9 +14,7 @@
 
     <div class="game-container">
 
-        <div class="game-heading">
-            <h1>Game</h1>
-        </div>
+        <h1>Game</h1>
 
         <div class="game-split-container">
 
