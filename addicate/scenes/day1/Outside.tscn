@@ -6,7 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://ogeoarkxbow0" path="res://assets/sprites/Field sign.png" id="3_ppadw"]
 [ext_resource type="Script" uid="uid://vjxo88540iqn" path="res://scenes/camera_outside.gd" id="4_japof"]
 [ext_resource type="PackedScene" uid="uid://cq2porugkeju4" path="res://scenes/door.tscn" id="4_rn6ye"]
-[ext_resource type="Script" uid="uid://detvqhc34d507" path="res://scripts/door_field.gd" id="5_rn6ye"]
+[ext_resource type="Script" uid="uid://detvqhc34d507" path="res://scripts/door_field_day1.gd" id="5_rn6ye"]
 [ext_resource type="Texture2D" uid="uid://b5ewmucwbomkq" path="res://assets/sprites/House sign.png" id="6_hfmcr"]
 
 [node name="Node2D" type="Node2D"]
@@ -35,7 +35,7 @@ script = ExtResource("4_japof")
 player = NodePath("../Player")
 
 [node name="Player" parent="." groups=["Player"] instance=ExtResource("1_drucc")]
-position = Vector2(-565, 46)
+position = Vector2(626, 43)
 
 [node name="Ground2" parent="." instance=ExtResource("3_m64sd")]
 position = Vector2(602, -124)
@@ -45,7 +45,7 @@ rotation = -3.14253
 position = Vector2(605, 191)
 
 [node name="Door inside" parent="." instance=ExtResource("4_rn6ye")]
-position = Vector2(814, -14)
+position = Vector2(813, -14)
 
 [node name="Door field" parent="." groups=["Player"] instance=ExtResource("4_rn6ye")]
 position = Vector2(-1961, 0)
