@@ -35,10 +35,14 @@ script = ExtResource("4_japof")
 player = NodePath("../Player")
 
 [node name="Player" parent="." groups=["Player"] instance=ExtResource("1_drucc")]
-position = Vector2(611, -10)
+position = Vector2(-565, 46)
+
+[node name="Ground2" parent="." instance=ExtResource("3_m64sd")]
+position = Vector2(602, -124)
+rotation = -3.14253
 
 [node name="Ground" parent="." instance=ExtResource("3_m64sd")]
-position = Vector2(739, 79)
+position = Vector2(605, 191)
 
 [node name="Door inside" parent="." instance=ExtResource("4_rn6ye")]
 position = Vector2(814, -14)

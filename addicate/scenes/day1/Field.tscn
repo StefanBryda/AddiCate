@@ -1,6 +1,6 @@
 [gd_scene load_steps=7 format=3 uid="uid://born7gptsroo8"]
 
-[ext_resource type="Script" uid="uid://bwptjx1ujakcs" path="res://scripts/field1.gd" id="1_q3786"]
+[ext_resource type="Script" path="res://scripts/field1.gd" id="1_q3786"]
 [ext_resource type="Texture2D" uid="uid://bke7joobfmby5" path="res://assets/backgrounds/field.png" id="1_uawk5"]
 [ext_resource type="PackedScene" uid="uid://oxxkfex7gohr" path="res://scenes/player.tscn" id="2_j00b8"]
 [ext_resource type="PackedScene" uid="uid://c4p4qfw4a0g13" path="res://scenes/ground.tscn" id="3_oa7lk"]
@@ -20,6 +20,10 @@ zoom = Vector2(0.93, 1.09)
 
 [node name="Player" parent="." groups=["Player"] instance=ExtResource("2_j00b8")]
 position = Vector2(927, 468)
+
+[node name="Ground2" parent="." instance=ExtResource("3_oa7lk")]
+position = Vector2(754, 286)
+scale = Vector2(1.05209, -1.22704)
 
 [node name="Ground" parent="." instance=ExtResource("3_oa7lk")]
 position = Vector2(776, 589)
