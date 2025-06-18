@@ -1,15 +1,37 @@
 :root {
+  /* Color Variables */
+  --primary-bg: #ffffff;
+  --secondary-bg: #ffffff;
+  --light-bg: #ededed;
+  --footer-bg: #d3d3d3;
+  --game-bg: #d9d9d9;
+  --text-light: #fff;
+  --text-dark: #333;
+
+  /* Spacing Variables */
   --generalborder: 8px;
-  /* Link git repo: same on all devices */
-  /* put it in the docker container - otherwise it wont work */
+  --section-padding: 2rem;
+  --box-padding: 1.5rem;
+
+  /* Font Variables */
+  --font-main: 'Roboto Mono', monospace;
+  --font-size-sm: 0.95rem;
+  --font-size-md: 1rem;
+  --font-size-lg: 1.3rem;
+  --font-size-xl: 1.4rem;
+  --font-size-xxl: 2.5rem;
+
+  /* Shadow Variables */
+  --shadow-light: 0 2px 6px rgba(0, 0, 0, 0.04);
+  --shadow-medium: 0 2px 12px rgba(0, 0, 0, 0.04);
 }
 
 /* General Style */
 * {
-  margin: 0;
   padding: 0;
+  font-family: var(--font-main);
   box-sizing: border-box;
-  font-family: 'Roboto Mono', monospace;
+  /* Consistent Sizing */
 }
 
 @font-face {
@@ -19,40 +41,6 @@
   src: url('../font/RobotoMono-VariableFont_wght.ttf') format('truetype');
 }
 
-/* Make the html and body fill the viewport */
-html, body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-}
-
-body{
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-}
-
-h1 {
-  font-size: 2.5rem;
-  font-weight: bold;
-  text-align: center;
-  margin-top: 80px; /* Push below the fixed header */
-  margin-bottom: 40px;
-}
-
-
-/* Flex layout for page container */
-.page-container {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh; /* full height of the screen */
-}
-
-/* Let main grow to take up available space */
-.page-container main {
-  flex: 1;
-}
-
 /* Header CSS */
 header {
   position: fixed;
@@ -60,7 +48,7 @@ header {
   left: 0;
   right: 0;
   height: 60px;
-  background-color: rgba(140, 135, 135, 0.9);
+  background-color: #8c8787;
   color: white;
   display: flex;
   justify-content: space-between;
@@ -103,7 +91,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
 }
 
 .navbar-container {
@@ -146,7 +134,8 @@ header {
 /* Main content wrapper */
 .main-content {
   flex: 1;
-  padding-top: 64px; /* Clear the fixed navbar */
+  padding-top: 64px;
+  /* Clear the fixed navbar */
   padding-bottom: 40px;
   background: #ededed;
 }
@@ -312,6 +301,16 @@ header {
   margin-bottom: 1rem;
 }
 
+/* Footer */
+.home-footer {
+  background-color: #d3d3d3;
+  text-align: center;
+  padding: 15px;
+  font-size: 14px;
+  margin-top: auto;
+  width: 100vw;
+}
+
 /* Responsive */
 @media (max-width: 900px) {
 
@@ -346,41 +345,24 @@ header {
 }
 
 /* Experience CSS */
-.experience-body {
-  margin-left: 3%;
-  margin-right: 3%;
-  padding-top: 60px; /* Clear the fixed header */
-}
 
-.experience-h1 {
-  text-align: center;
-  margin-bottom: 10%;
-  font-size: 2.5rem;
-}
+/* Experience - Story */
 
-.experience-grid {
-  align-self: center;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 5%;
-}
-
-.experience-textBox,
-.experience-video {
-  text-align: center;
-  background-color: lightgray;
-  border-radius: 10px;
-  margin-bottom: 10%;
-}
-
-.experience-video {
-  height: 567px;
-}
+/* Experience - Video */
 
 /* Resources CSS */
+#r-body {
+  line-height: 1.6;
+  padding: 2rem;
+}
+
 .r-heading {
   text-align: center;
-  margin-bottom: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.r-heading h1 {
+  font-size: 2.5rem;
 }
 
 .resource {
@@ -463,10 +445,22 @@ li {
 }
 
 /* Game CSS */
+#game-body {
+  background-color: white;
+  color: #333;
+  line-height: 1.6;
+  padding: 2rem;
+  min-height: 100vh;
+}
+
 .game-container {
   max-width: 1200px;
   margin: 0 auto;
+}
 
+.game-heading {
+  text-align: center;
+  margin-bottom: 2rem;
 }
 
 .game-split-container {
@@ -567,16 +561,23 @@ li {
 
 /* About Us CSS */
 .aboutus-main-container {
-  padding-top: 60px; /* Clear the fixed header */
+  padding-top: 60px;
+  /* Clear the fixed header */
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   min-height: 100vh;
 }
 
+.aboutus-title {
+  font-size: 40px;
+  margin: 0 auto;
+  text-align: center;
+  font-style: bold;
+}
+
 .aboutus-box1,
 .aboutus-box4 {
-  padding-left: 35px;
   border-radius: 20px;
   background-color: rgb(228, 227, 227);
 }
@@ -641,9 +642,10 @@ li {
 
 /* Footer CSS */
 footer {
-  background-color: #d3d3d3;
-  text-align: center;
-  padding: 15px;
+  position: relative;
+  background: linear-gradient(to bottom, #fff, #7F55B1);
+  padding: 40px 20px;
+  color: white;
   font-size: 14px;
   margin-top: auto;
   width: 100%;
