@@ -31,7 +31,7 @@
       <section class="addiction-section">
 
         <div class="addiction-anim-left">
-          
+
           <img src="./images/chain-break.png" alt="Breaking chains" />
         </div>
 
@@ -42,7 +42,7 @@
         </div>
 
         <div class="addiction-anim-right">
-          
+
           <img src="./images/brain.png" alt="Brain cycle" />
         </div>
       </section>
@@ -50,25 +50,21 @@
 
     <section class="section">
 
-      <h2 class="section-title">Recent Stories</h2>
+      <h2 class="section-title">Discover</h2>
 
-      <div class="recent-stories">
-        <!-- Story 1 -->
-        <div class="story-card">
-          <img src="./images/addiction.png" alt="Story 1 Image" />
-          <div class="story-overlay">
-            <p>This is a short description of the story.</p>
-          </div>
+      <div class="discover-section">
+
+        <div class="discover-image">
+          <img src="./images/people together.jpg" alt="Discover Illustration" />
         </div>
 
-        <!-- Story 2 -->
-        <div class="story-card">
-
-        </div>
-
-        <!-- Discover More -->
-        <div class="story-card">
-        <a href="./Experience/exp-story.html"
+        <div class="info-box">
+          <p>Discover stories and experiences from other people.</p>
+          <p>Get to know their experience, recovery process, and challenges along the way.
+            Learn from them and reflect on your own journey.</p
+          
+            <input type="button" onclick="location.href='experience.php'" class="discover-btn"> 
+            <button class="discover-btn" onclick="location.href='experience.php'">Read More</button>
         </div>
 
       </div>
@@ -76,7 +72,9 @@
     </section>
 
     <section class="section">
+
       <h2 class="section-title">Our Game</h2>
+
       <div class="our-game">
         <div class="info-box">
           <p>We believe in show and tell</p>
