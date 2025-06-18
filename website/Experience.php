@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,36 +8,41 @@
     </title>
     <link rel="stylesheet" href="./styleSheets/mainStyle.css" type="text/css">
 </head>
+
 <body>
-    
-f   <?php include 'header.php'; ?>
+
+    <?php include 'header.php'; ?>
 
     <main class="experience-main">
-        <h1 class="experience-h1">Experience</h1>
-        <section class="experience-grid">
-            <div class="experience-textBox">
-                <h3>Box 1</h3>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum quibusdam, corporis fugiat in rerum consectetur eligendi asperiores laboriosam facere non. Rem aliquam officiis a saepe repellat nemo dolores animi veniam?
+        <h1 class="experience-title">Experience</h1>
+
+        <div class="experience-wrapper">
+            <!-- Left animation placeholder -->
+            <div class="experience-anim anim-left">
+                <!-- Add your animation or image here -->
             </div>
 
-            <div class="experience-textBox">
-                <h3>Box 2</h3>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum quibusdam, corporis fugiat in rerum consectetur eligendi asperiores laboriosam facere non. Rem aliquam officiis a saepe repellat nemo dolores animi veniam?
+            <!-- Central experience options -->
+            <section class="experience-grid">
+                <a href="exp-story.php" class="exp-box">
+                    <p>Discover others' experiences and journeys</p>
+                </a>
+
+                <a href="exp-videos.php" class="exp-box">
+                    <p>Watch videos to understand addiction better</p>
+                </a>
+            </section>
+
+            <!-- Right animation placeholder -->
+            <div class="experience-anim anim-right">
+                <!-- animation or image here -->
             </div>
-
-            <div class="experience-textBox">
-                <h3>Box 3</h3>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum quibusdam, corporis fugiat in rerum consectetur eligendi asperiores laboriosam facere non. Rem aliquam officiis a saepe repellat nemo dolores animi veniam?
-            </div>
-        </section>
-
-        <section class="experience-video">
-            <h2>Video place holder</h2>
-        </section>
-
+        </div>
     </main>
 
-<?php include 'footer.php'; ?>
+
+    <?php include 'footer.php'; ?>
 
 </body>
+
 </html>
