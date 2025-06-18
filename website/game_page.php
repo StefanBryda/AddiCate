@@ -9,8 +9,8 @@
 </head>
 
 <body>
-    
-<?php include 'header.php'; ?>
+
+    <?php include 'header.php'; ?>
 
     <div class="game-container">
 
@@ -43,10 +43,10 @@
                 <div class="game-review">
 
                     <h2>Leave a Review</h2>
-                    <form id="review-form" action="mailto:your-email@example.com" method="post" enctype="text/plain">
+                    <form id="review-form" action="mailto:projectaddicate25@gmail.com" method="post" enctype="text/plain">
 
                         <textarea name="review" placeholder="Type your anonymous review here..." required></textarea>
-                        
+
                         <button type="submit">Submit Review</button>
 
                     </form>
@@ -58,7 +58,7 @@
         </div>
     </div>
 
-<?php include 'footer.php'; ?>
+    <?php include 'footer.php'; ?>
 
 </body>
 
