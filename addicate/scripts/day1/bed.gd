@@ -13,4 +13,7 @@ func _on_body_exited(body):
 func _process(delta):
 	if player_in_area and Input.is_action_just_pressed("Interact"):
 		print("detected")
+		call_deferred("_change_scene")
+		
+func _change_scene():
 		get_tree().change_scene_to_file("res://scenes/day2/Bedroom_morning.tscn")
