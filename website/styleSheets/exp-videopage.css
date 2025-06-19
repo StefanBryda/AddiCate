@@ -31,17 +31,19 @@
 }
 
 .video-info {
-    background-color: rgba(126, 87, 194, 0.85);
+    background-color: rgba(126, 87, 194, 0.201);
     /* Purple tint */
-    color: white;
+    color: var(--text-dark);
     padding: 2rem;
     border-radius: 12px;
-    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+    box-shadow: var(--purple-shadow);
+    
 }
 
 .video-info h2 {
     margin-top: 0;
     font-size: 1.6rem;
+    color: black;
 }
 
 .video-info p {
