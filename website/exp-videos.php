@@ -27,9 +27,9 @@
             <div class="video-info">
                 <h2>Understanding Addiction: More Than a Choice</h2>
                 <p>
-                    Addiction is not a lack of willpower—it's a chronic brain disease that affects how people think, feel, and behave. 
-                    This short video breaks down what addiction really is, how it impacts the brain, and why compassion and treatment 
-                    are essential. Whether you're personally affected or want to better understand someone who is, this video offers a 
+                    Addiction is not a lack of willpower—it's a chronic brain disease that affects how people think, feel, and behave.
+                    This short video breaks down what addiction really is, how it impacts the brain, and why compassion and treatment
+                    are essential. Whether you're personally affected or want to better understand someone who is, this video offers a
                     clear, science-based perspective to help end the stigma.
 
                     Recovery is possible. Understanding is the first step
@@ -42,7 +42,9 @@
             <div class="video-info">
                 <h2>Stages of Addiction</h2>
                 <p>
-                    This video walks you through the stages of Addiction.
+                    In this video, we break down the 5 key stages of addiction—from initial use to dependence and full addiction.
+                    Understanding these stages can help recognize the warning signs early. If you or someone you know is struggling,
+                    remember: support is available.
                 </p>
             </div>
 
