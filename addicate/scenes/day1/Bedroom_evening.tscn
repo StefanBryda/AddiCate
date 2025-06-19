@@ -1,7 +1,8 @@
-[gd_scene load_steps=9 format=3 uid="uid://cu4gaf8emfpei"]
+[gd_scene load_steps=10 format=3 uid="uid://cu4gaf8emfpei"]
 
 [ext_resource type="Texture2D" uid="uid://nl822xlvw8m5" path="res://assets/backgrounds/aiden-pedroncelli-playerroom.jpg" id="1_dnapl"]
 [ext_resource type="PackedScene" uid="uid://c4p4qfw4a0g13" path="res://scenes/ground.tscn" id="2_1ky1k"]
+[ext_resource type="Texture2D" uid="uid://26i6o3jkeoby" path="res://assets/sprites/day 1 sign.png" id="2_a0q5v"]
 [ext_resource type="PackedScene" uid="uid://oxxkfex7gohr" path="res://scenes/player.tscn" id="3_a0q5v"]
 [ext_resource type="PackedScene" uid="uid://bpkts4joml6fe" path="res://scenes/bed.tscn" id="4_dnapl"]
 
@@ -27,6 +28,11 @@ texture = ExtResource("1_dnapl")
 
 [node name="Camera2D" type="Camera2D" parent="Aiden-pedroncelli-playerroom"]
 zoom = Vector2(1.58, 1.58)
+
+[node name="Day1Sign" type="Sprite2D" parent="Aiden-pedroncelli-playerroom"]
+position = Vector2(-509.36, -77.4602)
+scale = Vector2(0.340356, 0.340356)
+texture = ExtResource("2_a0q5v")
 
 [node name="Ground2" parent="." instance=ExtResource("2_1ky1k")]
 position = Vector2(-45, -194)

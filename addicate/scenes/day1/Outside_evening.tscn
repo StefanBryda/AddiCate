@@ -7,8 +7,8 @@
 [ext_resource type="PackedScene" uid="uid://oxxkfex7gohr" path="res://scenes/player.tscn" id="5_32qgx"]
 [ext_resource type="PackedScene" uid="uid://c4p4qfw4a0g13" path="res://scenes/ground.tscn" id="6_n67qb"]
 [ext_resource type="PackedScene" uid="uid://cq2porugkeju4" path="res://scenes/door.tscn" id="7_a1tla"]
-[ext_resource type="Script" uid="uid://detvqhc34d507" path="res://scripts/day1/door_field_day1.gd" id="8_ileph"]
-[ext_resource type="Script" uid="uid://5b376d54e7o7" path="res://scripts/day1/door_inside_day1_evening.gd" id="8_xx456"]
+[ext_resource type="Script" uid="uid://detvqhc34d507" path="res://scripts/day1/door_field.gd" id="8_ileph"]
+[ext_resource type="Script" uid="uid://5b376d54e7o7" path="res://scripts/day1/door_inside_evening.gd" id="8_xx456"]
 
 [node name="Node2D" type="Node2D"]
 

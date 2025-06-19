@@ -13,4 +13,4 @@ func _on_body_exited(body):
 func _process(delta):
 	if player_in_area and Input.is_action_just_pressed("Interact"):
 		print("detected")
-		get_tree().change_scene_to_file("res://scenes/day2/Bedroom_morning.tscn")
+		get_tree().change_scene_to_file("res://scenes/day3/Bedroom_morning.tscn")

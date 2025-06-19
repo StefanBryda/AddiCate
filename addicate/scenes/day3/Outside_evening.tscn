@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://bsna2n3no07e5"]
+[gd_scene load_steps=9 format=3 uid="uid://bsna2n3no07e5"]
 
 [ext_resource type="Texture2D" uid="uid://c4vx44xqf33jl" path="res://assets/backgrounds/PNG/City4/Bright/City4.png" id="1_8k1bi"]
 [ext_resource type="Texture2D" uid="uid://b5ewmucwbomkq" path="res://assets/sprites/House sign.png" id="2_phwdd"]
@@ -7,8 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://oxxkfex7gohr" path="res://scenes/player.tscn" id="5_21id2"]
 [ext_resource type="PackedScene" uid="uid://c4p4qfw4a0g13" path="res://scenes/ground.tscn" id="6_08lbq"]
 [ext_resource type="PackedScene" uid="uid://cq2porugkeju4" path="res://scenes/door.tscn" id="7_f18rt"]
-[ext_resource type="Script" uid="uid://5b376d54e7o7" path="res://scripts/day1/door_inside_day1_evening.gd" id="8_j4g34"]
-[ext_resource type="Script" uid="uid://detvqhc34d507" path="res://scripts/day1/door_field_day1.gd" id="9_4pal3"]
+[ext_resource type="Script" uid="uid://da12lssmp82h0" path="res://scripts/day3/door_inside_evening.gd" id="8_gr5q0"]
 
 [node name="Node2D" type="Node2D"]
 
@@ -47,8 +46,8 @@ position = Vector2(605, 191)
 
 [node name="Door inside" parent="." instance=ExtResource("7_f18rt")]
 position = Vector2(814, -14)
-script = ExtResource("8_j4g34")
+script = ExtResource("8_gr5q0")
 
 [node name="Door field" parent="." groups=["Player"] instance=ExtResource("7_f18rt")]
 position = Vector2(-1961, 0)
-script = ExtResource("9_4pal3")
+script = ExtResource("8_gr5q0")

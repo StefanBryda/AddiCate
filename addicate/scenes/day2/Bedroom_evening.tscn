@@ -1,9 +1,11 @@
-[gd_scene load_steps=9 format=3 uid="uid://b2dxbbivf2kj3"]
+[gd_scene load_steps=11 format=3 uid="uid://b2dxbbivf2kj3"]
 
 [ext_resource type="Texture2D" uid="uid://nl822xlvw8m5" path="res://assets/backgrounds/aiden-pedroncelli-playerroom.jpg" id="1_pxiu8"]
 [ext_resource type="PackedScene" uid="uid://c4p4qfw4a0g13" path="res://scenes/ground.tscn" id="2_bjx15"]
 [ext_resource type="PackedScene" uid="uid://oxxkfex7gohr" path="res://scenes/player.tscn" id="3_dk27h"]
 [ext_resource type="PackedScene" uid="uid://bpkts4joml6fe" path="res://scenes/bed.tscn" id="4_ofetb"]
+[ext_resource type="Texture2D" uid="uid://dfphfb24fmn06" path="res://assets/sprites/day 2 sign.png" id="5_bjx15"]
+[ext_resource type="Script" uid="uid://cje1royos7e0o" path="res://scripts/day2/bed.gd" id="6_dk27h"]
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_uwrxv"]
 distance = -68.0
@@ -27,6 +29,11 @@ texture = ExtResource("1_pxiu8")
 
 [node name="Camera2D" type="Camera2D" parent="Aiden-pedroncelli-playerroom"]
 zoom = Vector2(1.58, 1.58)
+
+[node name="Day2Sign" type="Sprite2D" parent="Aiden-pedroncelli-playerroom"]
+position = Vector2(-514.054, -77.4603)
+scale = Vector2(0.340356, 0.340356)
+texture = ExtResource("5_bjx15")
 
 [node name="Ground2" parent="." instance=ExtResource("2_bjx15")]
 position = Vector2(-45, -194)
@@ -56,6 +63,7 @@ shape = SubResource("WorldBoundaryShape2D_lnu2h")
 
 [node name="Bed" parent="." instance=ExtResource("4_ofetb")]
 position = Vector2(202, -58)
+script = ExtResource("6_dk27h")
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="Bed"]
 shape = SubResource("RectangleShape2D_dnapl")

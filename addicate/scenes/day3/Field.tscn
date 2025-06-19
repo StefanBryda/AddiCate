@@ -5,7 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://oxxkfex7gohr" path="res://scenes/player.tscn" id="3_ubfd8"]
 [ext_resource type="PackedScene" uid="uid://c4p4qfw4a0g13" path="res://scenes/ground.tscn" id="4_ph73k"]
 [ext_resource type="PackedScene" uid="uid://cq2porugkeju4" path="res://scenes/door.tscn" id="5_xinwq"]
-[ext_resource type="Script" uid="uid://c0wweifvb7lds" path="res://scripts/day1/door_outside_day1_evening.gd" id="6_4krc6"]
+[ext_resource type="Script" uid="uid://dbbiyoaxu4q1u" path="res://scripts/day3/door_outside_evening.gd" id="6_1lxe6"]
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource("1_feumy")
@@ -30,4 +30,4 @@ position = Vector2(776, 589)
 
 [node name="Door outside" parent="." instance=ExtResource("5_xinwq")]
 position = Vector2(1034, 499)
-script = ExtResource("6_4krc6")
+script = ExtResource("6_1lxe6")
