@@ -5,18 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./styleSheets/mainStyle.css" rel="stylesheet" type="text/css">
+    <link href="./styleSheets/resourcepage.css" rel="stylesheet" type="text/css">
     <title>Resource Page</title>
 </head>
 
 <body>
 
-<?php include 'header.php'; ?>
+    <?php include 'header.php'; ?>
 
     <div class="resource">
 
-        <div class="r-heading">
-            <h1>Resource</h1>
-        </div>
+        <h1 class="r-heading">Resource</h1>
 
         <div class="split-contain"> <!-- Split left - right -->
 
@@ -61,7 +60,7 @@
                             <li>Reference 3: Sed do eiusmod tempor incididunt.</li>
                         </ul>
                     </div>
-                    
+
                 </details>
 
 
@@ -70,7 +69,7 @@
         </div>
 
     </div>
-<?php include 'footer.php'; ?>
+    <?php include 'footer.php'; ?>
 
 </body>
 
