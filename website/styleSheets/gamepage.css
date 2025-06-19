@@ -35,7 +35,7 @@
 }
 
 .game-embed {
-    background-color: #7e55b150;
+    background-color: var(--game-bg);
     border-radius: var(--generalborder);
     overflow: hidden;
     box-shadow: var(--shadow-medium);
