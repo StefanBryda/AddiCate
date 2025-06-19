@@ -8,7 +8,7 @@
 .subpage-title {
     font-size: 2.5rem;
     margin-bottom: 3rem;
-    color: black;
+    color: #7F55B1;
 }
 
 .card-grid {
@@ -19,7 +19,7 @@
 }
 
 .card {
-    background-color: rgba(255, 255, 255, 0.95);
+    background-color: #148F7C;
     border-radius: var(--generalborder);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
     overflow: hidden;
@@ -27,6 +27,10 @@
     cursor: pointer;
     display: flex;
     flex-direction: column;
+}
+
+.card {
+   background-color: var(--text-box);
 }
 
 .card:hover {
@@ -48,12 +52,12 @@
 .card-info h2 {
     margin: 0 0 0.5rem;
     font-size: 1.2rem;
-    color: var(--text-dark);
+    color: white;
 }
 
 .card-info p {
     font-size: 0.95rem;
-    color: var(--text-medium); 
+    color: white; 
 }
 
 .story-expanded-content

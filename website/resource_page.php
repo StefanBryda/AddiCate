@@ -41,7 +41,7 @@
                         <li>National Institute on Drug Abuse (NIDA)</li>
                         <li>National Alliance on Mental Illness (NAMI)</li>
                         <li>SMART Recovery</li>
-                    </p>
+                    </ul>
                     
                 </div>
 

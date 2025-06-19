@@ -35,7 +35,7 @@ p {
 
 .aboutus-title {
   font-size: var(--font-size-xxl);
-  color: var(--text-dark);
+  color: #7F55B1;
   display: flex;
   justify-content: center;
   margin-top: 3rem;
@@ -44,7 +44,7 @@ p {
 .aboutus-box1,
 .aboutus-box4 {
   border-radius: 20px;
-  background-color: white;
+  background-color:#148F7C;
   padding: 30px;
   text-align: left;
   max-height: 48rem;
@@ -60,6 +60,16 @@ p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  background-color: var(--text-box);
+}
+
+.aboutus-box1 h3 {
+  color: white;
+}
+
+.aboutus-box1 p {
+  color: white;
 }
 
 .aboutus-box3 {
@@ -80,10 +90,12 @@ p {
   grid-column: 2 / 3;
   grid-row: 2 / 3;
   margin: 0 5% 140px 5%;
+  background-color: var(--text-box);
 }
 
 .aboutus-box4 h3 {
   margin-bottom: 15px;
+  color: white;
 }
 
 .member-list {
@@ -97,7 +109,7 @@ p {
   margin-bottom: 10px;
   padding-left: 10px;
   position: relative;
-  color: var(--text-dark);
+  color: white;
 }
 
 .member-list li::before {
