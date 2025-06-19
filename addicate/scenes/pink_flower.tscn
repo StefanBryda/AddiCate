@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://f4n8dkym31a0"]
+
+[ext_resource type="Texture2D" uid="uid://crq82mreg157x" path="res://assets/sprites/Pink_Flower_2.png" id="1_elar5"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_x6w6d"]
+size = Vector2(52, 81)
+
+[node name="Pink flower" type="Area2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(3, -13.5)
+shape = SubResource("RectangleShape2D_x6w6d")
+
+[node name="PinkFlower2" type="Sprite2D" parent="."]
+position = Vector2(0, -1)
+texture = ExtResource("1_elar5")

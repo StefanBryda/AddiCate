@@ -1,0 +1,49 @@
+[gd_scene load_steps=8 format=3 uid="uid://usgguo2tag0d"]
+
+[ext_resource type="Texture2D" uid="uid://bke7joobfmby5" path="res://assets/backgrounds/field.png" id="1_gs8to"]
+[ext_resource type="PackedScene" uid="uid://btak0ottyy4vl" path="res://scenes/yellow_flower.tscn" id="2_23r2g"]
+[ext_resource type="Script" uid="uid://ro8dgdspt6hq" path="res://scripts/day2/player_yellow_high.gd" id="4_gs8to"]
+[ext_resource type="PackedScene" uid="uid://oxxkfex7gohr" path="res://scenes/player.tscn" id="4_xr6xu"]
+[ext_resource type="PackedScene" uid="uid://c4p4qfw4a0g13" path="res://scenes/ground.tscn" id="5_nhq4i"]
+[ext_resource type="PackedScene" uid="uid://cq2porugkeju4" path="res://scenes/door.tscn" id="6_l5ry2"]
+[ext_resource type="Script" uid="uid://cnmfe21tiga64" path="res://scripts/day2/door_outside_evening.gd" id="7_a4qps"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Field" type="Sprite2D" parent="."]
+position = Vector2(522, 339)
+scale = Vector2(2.07241, 2.07241)
+texture = ExtResource("1_gs8to")
+
+[node name="Camera2D" type="Camera2D" parent="Field"]
+zoom = Vector2(0.93, 1.09)
+
+[node name="Yellow flower" parent="." instance=ExtResource("2_23r2g")]
+position = Vector2(265, 469)
+
+[node name="Player" parent="." groups=["Player"] instance=ExtResource("4_xr6xu")]
+position = Vector2(261, 443)
+script = ExtResource("4_gs8to")
+speed = 800
+
+[node name="Ground2" parent="." instance=ExtResource("5_nhq4i")]
+position = Vector2(754, 286)
+scale = Vector2(1.05209, -1.22704)
+
+[node name="Ground" parent="." instance=ExtResource("5_nhq4i")]
+position = Vector2(776, 589)
+
+[node name="Door outside" parent="." instance=ExtResource("6_l5ry2")]
+position = Vector2(1034, 499)
+script = ExtResource("7_a4qps")
+
+[node name="Ground3" parent="." instance=ExtResource("5_nhq4i")]
+position = Vector2(-65, 401)
+rotation = 1.57499
+
+[node name="Ground4" parent="." instance=ExtResource("5_nhq4i")]
+position = Vector2(1094, 423)
+rotation = -1.5679
+
+[connection signal="body_entered" from="Yellow flower" to="Yellow flower" method="_on_body_entered"]
+[connection signal="body_exited" from="Yellow flower" to="Yellow flower" method="_on_body_exited"]

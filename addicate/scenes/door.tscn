@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://cq2porugkeju4"]
 
-[ext_resource type="Script" uid="uid://drswh6bwurste" path="res://scripts/door_inside.gd" id="1_hpvv5"]
+[ext_resource type="Script" uid="uid://drswh6bwurste" path="res://scripts/day1/door_inside.gd" id="1_hpvv5"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_m64sd"]
 
