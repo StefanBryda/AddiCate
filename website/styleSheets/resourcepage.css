@@ -1,3 +1,13 @@
+hr {
+    border: none;
+    height: 4px;
+    width: 257px;
+    background-color: #0d685a;
+    /* or use a variable like var(--accent-color) */
+    margin: 10px 0 20px 0;
+    border-radius: 2px; 
+}
+
 .r-heading {
     display: flex;
     justify-content: center;
@@ -10,23 +20,23 @@
 .resource {
     max-width: 1400px;
     margin: 0 auto;
-    padding: 60px 60px 40px;
-    margin-bottom: 3.13rem;
+    padding: 90px 60px 40px;
+    min-height: 83.2vh
 }
 
 .split-contain {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 2fr 1fr;
     gap: 2rem;
 }
 
 .reference {
-    background-color: #e0e0e0;
     padding: 1rem;
     border-radius: 8px;
+    margin: 0;
     width: 100%;
-    max-width: 400px;
-    margin: 0 auto;
+    max-width: 300px;
+    min-width: unset;
 }
 
 /* Clickable header */
@@ -35,6 +45,22 @@
     cursor: pointer;
     list-style: none;
     user-select: none;
+
+    display: flex;
+    align-items: center;
+}
+
+.reference summary::before {
+    content: '▶';
+    font-size: 1.2rem;
+    color: var(--text-dark);
+    margin-right: 0.5rem;
+    transition: transform 0.4s ease-in-out;
+    display: inline-block;
+}
+
+.reference[open] summary::before{
+    transform:rotate(90deg);
 }
 
 /* When open, expand the content */
@@ -55,6 +81,7 @@
 .r-right-container {
     display: flex;
     flex-direction: column;
+    align-items: flex-end;
     justify-content: flex-start;
 }
 
@@ -62,21 +89,14 @@
 .research,
 .org,
 .reference {
-    background-color: #e0e0e0;
     padding: 1.8rem;
     border-radius: 8px;
-    min-width: 31rem;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    box-shadow: var(--green-shadow);
 }
 
-#r-body>h3 {
-    font-size: 1.4rem;
-    margin-bottom: 1rem;
-}
-
-#r-body>p,
-li {
-    font-size: 1rem;
+.reference{
+    background-color: var(--text-box);
+    color: white;
 }
 
 /* Responsive adjustments */
@@ -87,5 +107,10 @@ li {
 
     .right-container {
         margin-top: 2rem;
+    }
+
+    .reference {
+        max-width: 100%;
+        margin: 0 auto;
     }
 }

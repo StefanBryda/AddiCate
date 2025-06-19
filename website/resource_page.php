@@ -25,6 +25,7 @@
                 <!-- Research Box -->
                 <div class="research">
                     <h3>Our Research</h3>
+                    <hr>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum ab illum repudiandae nulla magni
                         recusandae, debitis eos ducimus non vel hic, ex numquam sunt perspiciatis unde! Voluptas ex
                         cumque
@@ -35,11 +36,13 @@
                 <!-- Partners Box - change name -->
                 <div class="org">
                     <h3>Partners</h3>
+                    <hr>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum ab illum repudiandae nulla magni
                         recusandae, debitis eos ducimus non vel hic, ex numquam sunt perspiciatis unde! Voluptas ex
                         cumque
                         qui?
                     </p>
+                    
                 </div>
 
             </div>
@@ -54,6 +57,7 @@
                     </summary>
 
                     <div class="ref-content">
+                        <hr>
                         <ul>
                             <li>Reference 1: Lorem ipsum dolor sit amet.</li>
                             <li>Reference 2: Consectetur adipiscing elit.</li>
