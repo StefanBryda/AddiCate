@@ -1,0 +1,74 @@
+.experience-main {
+    padding: 4rem 2rem;
+    padding-top: 6rem;
+    max-width: 1300px;
+    margin: 0 auto;
+    text-align: center;
+    min-height: 83.2vh;
+}
+
+.experience-title {
+    font-size: var(--font-size-xxl);
+    margin-bottom: 2rem;
+    color: var(--text-dark);
+}
+
+.experience-wrapper {
+    display: inline-flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.experience-anim {
+    min-height: 250px;
+    opacity: 0.5;
+}
+
+/* Optional: placeholder style */
+.anim-left,
+.anim-right {
+    background-image: url('./images/animated-placeholder.svg');
+    /* swap for your animation */
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* Center boxes grid */
+.experience-grid {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    gap: 2rem;
+}
+
+.exp-box {
+    background-color: #148f7d;
+    color: #fff;
+    padding: 2rem;
+    width: 400px;
+    border-radius: var(--generalborder, 12px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-decoration: none;
+}
+
+.exp-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.25);
+}
+
+.exp-box p {
+    margin: 0;
+    font-size: 1.1rem;
+    padding-top: inherit;
+}
+
+.experience-grid img {
+    width: 100%;
+    height: 70%;
+    display: block;
+}
