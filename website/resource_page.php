@@ -5,18 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./styleSheets/mainStyle.css" rel="stylesheet" type="text/css">
+    <link href="./styleSheets/resourcepage.css" rel="stylesheet" type="text/css">
     <title>Resource Page</title>
 </head>
 
 <body>
 
-<?php include 'header.php'; ?>
+    <?php include 'header.php'; ?>
 
     <div class="resource">
 
-        <div class="r-heading">
-            <h1>Resource</h1>
-        </div>
+        <h1 class="r-heading">Resource</h1>
 
         <div class="split-contain"> <!-- Split left - right -->
 
@@ -26,6 +25,7 @@
                 <!-- Research Box -->
                 <div class="research">
                     <h3>Our Research</h3>
+
                     <p>Our Research, AddiCate was created to raise awareness and reduce the stigma around addiction. We started by exploring trusted sources, like scientific studies, health articles, and real-life stories, to better understand how addiction affects people’s thoughts, emotions, and daily lives. We also listened closely to the voices of those who have experienced addiction, as well as the people supporting them.
 While we’re not medical professionals, we’ve done our best to make sure everything you see on our platform is respectful, relatable, and rooted in facts. Our goal is not to give expert advice, but to offer understanding, connection, and a safe space where no one feels judged.ers, References
                     </p>
@@ -34,6 +34,7 @@ While we’re not medical professionals, we’ve done our best to make sure ever
                 <!-- Partners Box - change name -->
                 <div class="org">
                     <h3>Partners</h3>
+
                     <p>Future partner organizations listed.</p>
                     <ul>
                         <li>World Health Organization (WHO)</li>
@@ -43,7 +44,8 @@ While we’re not medical professionals, we’ve done our best to make sure ever
                         <li>National Institute on Drug Abuse (NIDA)</li>
                         <li>National Alliance on Mental Illness (NAMI)</li>
                         <li>SMART Recovery</li>
-                    </p>
+                    </ul>
+                    
                 </div>
 
             </div>
@@ -58,6 +60,7 @@ While we’re not medical professionals, we’ve done our best to make sure ever
                     </summary>
 
                     <div class="ref-content">
+                        <hr>
                         <ul>
                             <li>National Institute on Drug Abuse. Drugs, Brains, and Behavior: The Science of Addiction (3rd ed.). NIH Publication No. 18-DA-5605, 2018.</li>
                             <li>World Health Organization. Global Status Report on Alcohol and Health 2018. Geneva: WHO Press, 2018.</li>
@@ -71,7 +74,7 @@ While we’re not medical professionals, we’ve done our best to make sure ever
                             <li>Potenza, M. N. “Pathological Gambling: A Behavioral Addiction Model.” American Journal on Addictions 18(1):13–17, 2009.</li>
                         </ul>
                     </div>
-                    
+
                 </details>
 
 
@@ -80,7 +83,7 @@ While we’re not medical professionals, we’ve done our best to make sure ever
         </div>
 
     </div>
-<?php include 'footer.php'; ?>
+    <?php include 'footer.php'; ?>
 
 </body>
 

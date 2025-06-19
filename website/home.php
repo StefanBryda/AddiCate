@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Home Page</title>
   <link rel="stylesheet" href="./styleSheets/mainStyle.css" type="text/css">
+  <link rel="stylesheet" href="./styleSheets/homepage.css" type="text/css">
 
 </head>
 
@@ -63,9 +64,9 @@ But addiction is not a moral failing, it’s a health issue that affects how you
           <p>Discover stories and experiences from other people.</p>
           <p>Get to know their experience, recovery process, and challenges along the way.
             Learn from them and reflect on your own journey.</p
-          
-            <input type="button" onclick="location.href='experience.php'" class="discover-btn"> 
-            <button class="discover-btn" onclick="location.href='experience.php'">Read More</button>
+
+            <input type="button" onclick="location.href='experience.php'" class="discover-btn">
+          <button class="discover-btn" onclick="location.href='experience.php'">Read More</button>
         </div>
 
       </div>

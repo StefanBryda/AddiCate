@@ -1,9 +1,8 @@
-[gd_scene load_steps=9 format=3 uid="uid://c46wot07l7dkv"]
+[gd_scene load_steps=8 format=3 uid="uid://vwvbgfmrcg58"]
 
 [ext_resource type="Texture2D" uid="uid://nl822xlvw8m5" path="res://assets/backgrounds/aiden-pedroncelli-playerroom.jpg" id="1_4e0qb"]
 [ext_resource type="PackedScene" uid="uid://c4p4qfw4a0g13" path="res://scenes/ground.tscn" id="2_80lnh"]
 [ext_resource type="PackedScene" uid="uid://oxxkfex7gohr" path="res://scenes/player.tscn" id="3_hstc8"]
-[ext_resource type="Script" uid="uid://c37t5ha4w80m8" path="res://scripts/door_outside.gd" id="4_fry10"]
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_uwrxv"]
 distance = -68.0
@@ -19,20 +18,22 @@ normal = Vector2(-0.999972, 0.00751858)
 [node name="Bedroom" type="Node2D"]
 position = Vector2(4, 16)
 
-[node name="Aiden-pedroncelli-playerroom" type="Sprite2D" parent="."]
-position = Vector2(-12, -146)
-scale = Vector2(0.426025, 0.426025)
-texture = ExtResource("1_4e0qb")
-
-[node name="Camera2D" type="Camera2D" parent="Aiden-pedroncelli-playerroom"]
-zoom = Vector2(1.58, 1.58)
-
 [node name="Ground2" parent="." instance=ExtResource("2_80lnh")]
 position = Vector2(-45, -194)
 rotation = -3.13217
 
 [node name="Player" parent="." groups=["Player"] instance=ExtResource("3_hstc8")]
 position = Vector2(-22, -115)
+
+[node name="Aiden-pedroncelli-playerroom" type="Sprite2D" parent="Player"]
+position = Vector2(10, -31)
+scale = Vector2(0.4, 0.4)
+texture = ExtResource("1_4e0qb")
+
+[node name="Camera2D" type="Camera2D" parent="Player"]
+position = Vector2(10, -31)
+scale = Vector2(0.4, 0.4)
+zoom = Vector2(1.58, 1.58)
 
 [node name="Ground" type="StaticBody2D" parent="."]
 position = Vector2(-6, -7)
@@ -55,7 +56,6 @@ shape = SubResource("WorldBoundaryShape2D_lnu2h")
 
 [node name="Door outside" type="Area2D" parent="."]
 position = Vector2(-365, -100)
-script = ExtResource("4_fry10")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Door outside"]
 shape = SubResource("RectangleShape2D_qxlp7")

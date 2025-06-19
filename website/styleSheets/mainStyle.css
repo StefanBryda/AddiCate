@@ -4,11 +4,12 @@
   --secondary-bg: #ffffff;
   --light-bg: #ededed;
   --footer-bg: #d3d3d3;
-  --game-bg: #d9d9d9;
+  --game-bg: #6bc4b633;
   --text-light: #fff;
   --text-dark: #333;
   --purple-main: #7F55B1;
   --green-main: #148F7C;
+  --text-box:#148f7d83;
 
   /* Spacing Variables */
   --generalborder: 8px;
@@ -21,16 +22,19 @@
   --font-size-md: 1rem;
   --font-size-lg: 1.3rem;
   --font-size-xl: 1.4rem;
-  --font-size-xxl: 2.5rem;
+  --font-size-xxl: 2.8rem;
 
   /* Shadow Variables */
   --shadow-light: 0 2px 6px rgba(0, 0, 0, 0.04);
   --shadow-medium: 0 2px 12px rgba(0, 0, 0, 0.04);
+  --green-shadow: 0 2px 12px var(--green-main);
+  --purple-shadow: 0 2px 12px var(--purple-main);
 }
 
 /* General Style */
 * {
   padding: 0;
+  margin: 0;
   font-family: var(--font-main);
   box-sizing: border-box;
 }
@@ -40,6 +44,10 @@
   font-style: normal;
   font-weight: 100 700;
   src: url('../font/RobotoMono-VariableFont_wght.ttf') format('truetype');
+}
+
+main {
+  min-height: 100vh;
 }
 
 /* Header CSS */
@@ -796,7 +804,7 @@ li {
 /* Footer CSS */
 footer {
   position: relative;
-  background: linear-gradient(to bottom, #fff, #7F55B1);
+  background: var(--purple-main);
   padding: 40px 20px;
   color: white;
   font-size: 14px;
@@ -805,4 +813,11 @@ footer {
   margin-left: 0;
   margin-right: 0px;
   box-sizing: border-box;
+  bottom: 0;
+  left: 0;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
 }
