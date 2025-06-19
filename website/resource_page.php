@@ -34,10 +34,15 @@ While we’re not medical professionals, we’ve done our best to make sure ever
                 <!-- Partners Box - change name -->
                 <div class="org">
                     <h3>Partners</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum ab illum repudiandae nulla magni
-                        recusandae, debitis eos ducimus non vel hic, ex numquam sunt perspiciatis unde! Voluptas ex
-                        cumque
-                        qui?
+                    <p>Future partner organizations listed.</p>
+                    <ul>
+                        <li>World Health Organization (WHO)</li>
+                        <li>Substance Abuse and Mental Health Services Administration (SAMHSA)</li>
+                        <li>Trimbos-instituut (Netherlands Institute of Mental Health and Addiction)</li>
+                        <li>Take This</li>
+                        <li>National Institute on Drug Abuse (NIDA)</li>
+                        <li>National Alliance on Mental Illness (NAMI)</li>
+                        <li>SMART Recovery</li>
                     </p>
                 </div>
 
