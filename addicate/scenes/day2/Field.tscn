@@ -1,14 +1,13 @@
 [gd_scene load_steps=7 format=3 uid="uid://gb5kyv62xwa2"]
 
-[ext_resource type="Script" uid="uid://bwptjx1ujakcs" path="res://scripts/field1.gd" id="1_7v5ac"]
+[ext_resource type="PackedScene" uid="uid://btak0ottyy4vl" path="res://scenes/yellow_flower.tscn" id="2_5bx57"]
 [ext_resource type="Texture2D" uid="uid://bke7joobfmby5" path="res://assets/backgrounds/field.png" id="2_7a4ar"]
+[ext_resource type="Script" uid="uid://dg85oku3cvxy" path="res://scripts/day2/yellow_flower.gd" id="3_8evdh"]
 [ext_resource type="PackedScene" uid="uid://oxxkfex7gohr" path="res://scenes/player.tscn" id="3_yt72x"]
 [ext_resource type="PackedScene" uid="uid://c4p4qfw4a0g13" path="res://scenes/ground.tscn" id="4_of6d7"]
 [ext_resource type="PackedScene" uid="uid://cq2porugkeju4" path="res://scenes/door.tscn" id="5_4lsyv"]
-[ext_resource type="Script" uid="uid://cnmfe21tiga64" path="res://scripts/day2/door_outside_evening.gd" id="6_r2qso"]
 
 [node name="Node2D" type="Node2D"]
-script = ExtResource("1_7v5ac")
 
 [node name="Field" type="Sprite2D" parent="."]
 position = Vector2(522, 339)
@@ -17,6 +16,10 @@ texture = ExtResource("2_7a4ar")
 
 [node name="Camera2D" type="Camera2D" parent="Field"]
 zoom = Vector2(0.93, 1.09)
+
+[node name="Yellow flower" parent="." instance=ExtResource("2_5bx57")]
+position = Vector2(265, 469)
+script = ExtResource("3_8evdh")
 
 [node name="Player" parent="." groups=["Player"] instance=ExtResource("3_yt72x")]
 position = Vector2(927, 468)
@@ -30,4 +33,7 @@ position = Vector2(776, 589)
 
 [node name="Door outside" parent="." instance=ExtResource("5_4lsyv")]
 position = Vector2(1034, 499)
-script = ExtResource("6_r2qso")
+script = null
+
+[connection signal="body_entered" from="Yellow flower" to="Yellow flower" method="_on_body_entered"]
+[connection signal="body_exited" from="Yellow flower" to="Yellow flower" method="_on_body_exited"]

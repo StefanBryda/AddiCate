@@ -30,7 +30,7 @@ texture = ExtResource("1_dnapl")
 zoom = Vector2(1.58, 1.58)
 
 [node name="Day1Sign" type="Sprite2D" parent="Aiden-pedroncelli-playerroom"]
-position = Vector2(-509.36, -77.4602)
+position = Vector2(-514.054, -77.4602)
 scale = Vector2(0.340356, 0.340356)
 texture = ExtResource("2_a0q5v")
 

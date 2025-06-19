@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://yy6fmlyl10o1"]
+[gd_scene load_steps=11 format=3 uid="uid://yy6fmlyl10o1"]
 
 [ext_resource type="Texture2D" uid="uid://c4vx44xqf33jl" path="res://assets/backgrounds/PNG/City4/Bright/City4.png" id="1_hmrui"]
 [ext_resource type="Texture2D" uid="uid://b5ewmucwbomkq" path="res://assets/sprites/House sign.png" id="2_348j2"]
@@ -6,6 +6,7 @@
 [ext_resource type="Script" uid="uid://vjxo88540iqn" path="res://scripts/day1/camera_outside.gd" id="4_m1es3"]
 [ext_resource type="PackedScene" uid="uid://oxxkfex7gohr" path="res://scenes/player.tscn" id="5_vv5bc"]
 [ext_resource type="PackedScene" uid="uid://c4p4qfw4a0g13" path="res://scenes/ground.tscn" id="6_c6kcj"]
+[ext_resource type="Script" uid="uid://c13bp43ed3u3b" path="res://scripts/day3/player_hangover.gd" id="6_dkqeo"]
 [ext_resource type="PackedScene" uid="uid://cq2porugkeju4" path="res://scenes/door.tscn" id="7_s0qow"]
 [ext_resource type="Script" uid="uid://cg2st0gnewj64" path="res://scripts/day3/door_inside.gd" id="8_b4jbc"]
 [ext_resource type="Script" uid="uid://ck35o43sbp28m" path="res://scripts/day3/door_field.gd" id="9_dkqeo"]
@@ -37,6 +38,8 @@ player = NodePath("../Player")
 
 [node name="Player" parent="." groups=["Player"] instance=ExtResource("5_vv5bc")]
 position = Vector2(626, 43)
+script = ExtResource("6_dkqeo")
+speed = 200
 
 [node name="Ground2" parent="." instance=ExtResource("6_c6kcj")]
 position = Vector2(602, -124)

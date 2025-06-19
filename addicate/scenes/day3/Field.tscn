@@ -1,6 +1,5 @@
-[gd_scene load_steps=7 format=3 uid="uid://1frshvnvc3vc"]
+[gd_scene load_steps=6 format=3 uid="uid://1frshvnvc3vc"]
 
-[ext_resource type="Script" uid="uid://bwptjx1ujakcs" path="res://scripts/field1.gd" id="1_feumy"]
 [ext_resource type="Texture2D" uid="uid://bke7joobfmby5" path="res://assets/backgrounds/field.png" id="2_geu88"]
 [ext_resource type="PackedScene" uid="uid://oxxkfex7gohr" path="res://scenes/player.tscn" id="3_ubfd8"]
 [ext_resource type="PackedScene" uid="uid://c4p4qfw4a0g13" path="res://scenes/ground.tscn" id="4_ph73k"]
@@ -8,7 +7,6 @@
 [ext_resource type="Script" uid="uid://dbbiyoaxu4q1u" path="res://scripts/day3/door_outside_evening.gd" id="6_1lxe6"]
 
 [node name="Node2D" type="Node2D"]
-script = ExtResource("1_feumy")
 
 [node name="Field" type="Sprite2D" parent="."]
 position = Vector2(522, 339)
@@ -31,3 +29,7 @@ position = Vector2(776, 589)
 [node name="Door outside" parent="." instance=ExtResource("5_xinwq")]
 position = Vector2(1034, 499)
 script = ExtResource("6_1lxe6")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="Area2D" type="Area2D" parent="StaticBody2D"]
