@@ -1,6 +1,6 @@
 extends CharacterBody2D
 
-@export var speed = 400
+@export var speed = 200
 @export var animation_speed = 7.0 
 
 var is_facing_right = true

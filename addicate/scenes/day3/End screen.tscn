@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=3 uid="uid://c15eh2lvrrx4l"]
+
+[ext_resource type="Texture2D" uid="uid://xwyoy8le2crk" path="res://assets/backgrounds/end screen.png" id="1_qqgom"]
+
+[node name="EndScreen" type="Node2D"]
+
+[node name="EndScreen" type="Sprite2D" parent="."]
+position = Vector2(595, 342)
+scale = Vector2(1.12684, 1.12684)
+texture = ExtResource("1_qqgom")
+
+[node name="Camera2D" type="Camera2D" parent="EndScreen"]
+position = Vector2(-5.32458, -6.21207)
