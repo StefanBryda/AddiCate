@@ -1,0 +1,54 @@
+[gd_scene load_steps=10 format=3 uid="uid://7dmwhve5bltj"]
+
+[ext_resource type="Texture2D" uid="uid://c4vx44xqf33jl" path="res://assets/backgrounds/PNG/City4/Bright/City4.png" id="1_ra5x7"]
+[ext_resource type="Texture2D" uid="uid://b5ewmucwbomkq" path="res://assets/sprites/House sign.png" id="2_3skef"]
+[ext_resource type="Texture2D" uid="uid://ogeoarkxbow0" path="res://assets/sprites/Field sign.png" id="3_t32e5"]
+[ext_resource type="Script" uid="uid://vjxo88540iqn" path="res://scenes/camera_outside.gd" id="4_87d8s"]
+[ext_resource type="PackedScene" uid="uid://oxxkfex7gohr" path="res://scenes/player.tscn" id="5_d0nua"]
+[ext_resource type="PackedScene" uid="uid://c4p4qfw4a0g13" path="res://scenes/ground.tscn" id="6_5bh06"]
+[ext_resource type="PackedScene" uid="uid://cq2porugkeju4" path="res://scenes/door.tscn" id="7_2gdf6"]
+[ext_resource type="Script" uid="uid://5b376d54e7o7" path="res://scripts/door_inside_day1_evening.gd" id="8_d8lr5"]
+[ext_resource type="Script" uid="uid://detvqhc34d507" path="res://scripts/door_field_day1.gd" id="9_s67me"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="City4" type="Sprite2D" parent="."]
+position = Vector2(386, -340)
+texture = ExtResource("1_ra5x7")
+
+[node name="City5" type="Sprite2D" parent="."]
+position = Vector2(-1534, -341)
+texture = ExtResource("1_ra5x7")
+
+[node name="HouseSign" type="Sprite2D" parent="."]
+position = Vector2(814, -14)
+scale = Vector2(0.415493, 0.415493)
+texture = ExtResource("2_3skef")
+
+[node name="FieldSign" type="Sprite2D" parent="."]
+position = Vector2(-1961, -4.76837e-07)
+scale = Vector2(0.423709, 0.423709)
+texture = ExtResource("3_t32e5")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(603, -140)
+script = ExtResource("4_87d8s")
+player = NodePath("../Player")
+
+[node name="Player" parent="." groups=["Player"] instance=ExtResource("5_d0nua")]
+position = Vector2(-1777, 53)
+
+[node name="Ground2" parent="." instance=ExtResource("6_5bh06")]
+position = Vector2(602, -124)
+rotation = -3.14253
+
+[node name="Ground" parent="." instance=ExtResource("6_5bh06")]
+position = Vector2(605, 191)
+
+[node name="Door inside" parent="." instance=ExtResource("7_2gdf6")]
+position = Vector2(814, -14)
+script = ExtResource("8_d8lr5")
+
+[node name="Door field" parent="." groups=["Player"] instance=ExtResource("7_2gdf6")]
+position = Vector2(-1961, 0)
+script = ExtResource("9_s67me")
