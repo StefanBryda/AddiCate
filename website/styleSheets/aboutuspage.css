@@ -4,7 +4,7 @@ body> :nth-child(2) {
 
 h3 {
 
-  color: #fff;
+  color: black;
   font-size: var(--font-size-lg);
 }
 
@@ -19,7 +19,7 @@ hr {
 }
 
 p {
-  color: #fff;
+  color: var(--text-dark);
 }
 
 .aboutus-main-container {
@@ -44,10 +44,11 @@ p {
 .aboutus-box1,
 .aboutus-box4 {
   border-radius: 20px;
-  background-color: #0d685aa1;
+  background-color: white;
   padding: 30px;
   text-align: left;
   max-height: 48rem;
+  box-shadow: var(--green-shadow);
 }
 
 .aboutus-box1 {
@@ -96,7 +97,7 @@ p {
   margin-bottom: 10px;
   padding-left: 10px;
   position: relative;
-  color: var(--text-light);
+  color: var(--text-dark);
 }
 
 .member-list li::before {
