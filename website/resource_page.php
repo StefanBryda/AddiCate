@@ -26,10 +26,6 @@
                 <!-- Research Box -->
                 <div class="research">
                     <h3>Our Research</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum ab illum repudiandae nulla magni
-                        recusandae, debitis eos ducimus non vel hic, ex numquam sunt perspiciatis unde! Voluptas ex
-                        cumque
-                        qui?
                     </p>
                 </div>
 
@@ -56,9 +52,6 @@
 
                     <div class="ref-content">
                         <ul>
-                            <li>Reference 1: Lorem ipsum dolor sit amet.</li>
-                            <li>Reference 2: Consectetur adipiscing elit.</li>
-                            <li>Reference 3: Sed do eiusmod tempor incididunt.</li>
                         </ul>
                     </div>
                     
