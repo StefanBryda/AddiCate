@@ -35,5 +35,13 @@ position = Vector2(776, 589)
 position = Vector2(1034, 499)
 script = null
 
+[node name="Ground3" parent="." instance=ExtResource("4_of6d7")]
+position = Vector2(-61, 417)
+rotation = 1.54133
+
+[node name="Ground4" parent="." instance=ExtResource("4_of6d7")]
+position = Vector2(1103, 440)
+rotation = -1.56784
+
 [connection signal="body_entered" from="Yellow flower" to="Yellow flower" method="_on_body_entered"]
 [connection signal="body_exited" from="Yellow flower" to="Yellow flower" method="_on_body_exited"]

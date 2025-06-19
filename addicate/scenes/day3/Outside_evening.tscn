@@ -62,3 +62,11 @@ script = ExtResource("8_gr5q0")
 [node name="Door field" parent="." groups=["Player"] instance=ExtResource("7_f18rt")]
 position = Vector2(-1961, 0)
 script = ExtResource("8_gr5q0")
+
+[node name="Ground3" parent="." instance=ExtResource("6_08lbq")]
+position = Vector2(-2154, -3)
+rotation = 1.5693
+
+[node name="Ground4" parent="." instance=ExtResource("6_08lbq")]
+position = Vector2(1013, -5)
+rotation = -1.56995

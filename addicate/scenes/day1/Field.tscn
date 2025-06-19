@@ -33,3 +33,11 @@ position = Vector2(776, 589)
 [node name="Door outside" parent="." instance=ExtResource("4_j00b8")]
 position = Vector2(1034, 499)
 script = ExtResource("6_j85n1")
+
+[node name="Ground3" parent="." instance=ExtResource("3_oa7lk")]
+position = Vector2(-80, 434)
+rotation = 1.55476
+
+[node name="Ground4" parent="." instance=ExtResource("3_oa7lk")]
+position = Vector2(1114, 439)
+rotation = -1.57861
