@@ -19,9 +19,9 @@
 
         <div class="experience-wrapper">
             <!-- Left animation placeholder -->
-            <!-- <div class="experience-anim anim-left"> -->
-            <!-- Add your animation or image here -->
-            <!-- </div> -->
+            <div class="experience-anim anim-left">
+                <img src="./images/story-icon.png" alt="Story Book" />
+            </div>
 
             <!-- Central experience options -->
             <section class="experience-grid">
@@ -39,9 +39,9 @@
             </section>
 
             <!-- Right animation placeholder -->
-            <!-- <div class="experience-anim anim-right"> -->
-            <!-- animation or image here -->
-            <!-- </div> -->
+            <div class="experience-anim anim-right">
+                <img src="./images/video-icon.png" alt="Video Player" />
+            </div>
         </div>
     </main>
 

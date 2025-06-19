@@ -22,19 +22,37 @@
     gap: 2rem;
 }
 
-.experience-anim {
-    min-height: 250px;
-    opacity: 0.5;
+.experience-anim img {
+    width: 150px;
+    /* smaller size */
+    height: auto;
+    opacity: 0.8;
+    display: block;
+    margin: 0 auto;
+    /* centers horizontally */
+    animation: floatAnim 3s ease-in-out infinite;
+    /* floating effect */
 }
 
-/* Optional: placeholder style */
-.anim-left,
+.anim-left, 
 .anim-right {
-    background-image: url('./images/animated-placeholder.svg');
-    /* swap for your animation */
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
+    display: flex;
+    align-items: center;
+}
+
+/* Floating animation */
+@keyframes floatAnim {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-12px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
 }
 
 /* Center boxes grid */
