@@ -36,9 +36,10 @@
         </div>
 
         <div class="addiction-box" data-aos="flip-up">
+          <p>Recovery Starts with Understanding</p>
+          <p> Addiction happens when you feel you can’t stop doing or using something, even when it’s causing real problems in your life. It might be alcohol, drugs or smoking, but it can also be gambling, shopping, gaming, working too much or endless scrolling on your phone. Over time, your brain starts craving that “rush” so strongly that saying “no” feels almost impossible, and you end up feeling stuck, alone or ashamed.
 
-          <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti a est ducimus quis aliquid voluptas autem
-            molestias enim rem repellendus cum illo optio modi molestiae expedita laborum velit, corrupti reiciendis. </p>
+But addiction is not a moral failing, it’s a health issue that affects how your brain and body work. You aren’t weak or “broken.” With understanding, kindness and the right support, whether that’s talking to friends or family, seeing a counsellor or doctor, joining a support group, or trying specific treatments, you can learn healthier ways to cope, rebuild trust in yourself, and take back control of your life. You don’t have to face it on your own. </p>
         </div>
 
         <div class="addiction-anim-right">

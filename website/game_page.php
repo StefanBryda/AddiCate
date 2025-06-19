@@ -35,8 +35,8 @@
                 <div class="game-description">
 
                     <h2>Game Story</h2>
-                    <p>This is where your game description and story will go. Lorem ipsum dolor sit amet, consectetur
-                        adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <p>Our game showcases the life of a person going through addiction, not just the struggles but also their recovery process. 
+            We have released a demo version of the game and if we get more support we would be able to demonstrate the story better.</p>
 
                 </div>
 
