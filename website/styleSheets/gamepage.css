@@ -58,12 +58,11 @@
 
 .game-description,
 .game-review {
-    background-color: #148f7d83;
     padding: 1.8rem;
     border-radius: var(--generalborder);
     box-shadow: var(--shadow-medium);
     min-width: 31rem;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.632);
+    box-shadow: var(--purple-shadow);
     border-radius: 0.6rem;
 }
 
