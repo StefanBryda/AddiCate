@@ -1,0 +1,241 @@
+.home-nav {
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #8c8c8c;
+    z-index: 1000;
+    min-height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+}
+
+.navbar-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    height: 48px;
+    position: relative;
+}
+
+.nav-logo {
+    margin-right: 2.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    gap: 150px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: color 0.2s;
+    line-height: 48px;
+    display: inline-block;
+    padding: 0 8px;
+    letter-spacing: 0.04em;
+}
+
+.nav-links a:hover {
+    color: #ededed;
+}
+
+/* Main content wrapper */
+.main-content {
+    padding-top: 80px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Hero Section */
+.hero-container {
+    background: linear-gradient(to bottom, var(--purple-main), #9B7EBD, #148F7C);
+    color: var(--text-light);
+}
+
+/* Inner hero section remains centered and tall */
+.hero-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5rem 2rem;
+    flex-wrap: wrap;
+    min-height: 400px;
+}
+
+.hero-content {
+    max-width: 480px;
+}
+
+.hero-avatar {
+    max-width: 250px;
+    border-radius: var(--generalborder);
+}
+
+/* Section Common */
+.section {
+    margin-top: 8rem;
+    margin-bottom: 4rem;
+}
+
+.section-title {
+    text-align: center;
+    font-size: var(--font-size-xxl);
+    color: var(--purple-main);
+    margin-bottom: 2rem;
+}
+
+/* What is Addiction */
+.addiction-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+    margin-top: 5rem
+}
+
+.addiction-box {
+    grid-column: 2/3;
+    background: var(--green-main);
+    color: white;
+    padding: 1.5rem;
+    border-radius: var(--generalborder);
+    text-align: center;
+
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Base styles for visuals */
+.addiction-anim-left,
+.addiction-anim-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.addiction-anim-left img,
+.addiction-anim-right img {
+    width: 120px;
+    animation: float 3s ease-in-out infinite;
+}
+
+/* Simple float animation */
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-15px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+/* Discover Stories */
+
+.discover-section {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    gap: 2rem;
+    margin-top: 5rem;
+    align-items: center;
+}
+
+.discover-section .info-box {
+    background-color: rgba(126, 87, 194, 0.85);
+    /* purple with slight transparency */
+    color: white;
+    padding: 1.5rem;
+    border-radius: var(--generalborder);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.discover-section .discover-image img {
+    width: 100%;
+    border-radius: var(--generalborder);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.discover-section .discover-image img:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25);
+}
+
+/* Button to Experience page */
+.discover-btn {
+    margin-top: 1.5rem;
+    padding: 0.75rem 1.5rem;
+    background-color: #ffffff;
+    color: #7e57c2;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.discover-btn:hover {
+    background-color: #7e57c2;
+    color: #ffffff; 
+}
+
+.our-game {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  gap: 2rem;
+  margin-top: 5rem;
+}
+
+.info-box {
+  /* Shared with Game and Discover*/
+  background: var(--green-main);
+  color: white;
+  padding: 1.5rem;
+  border-radius: var(--generalborder);
+  align-items: center;
+  max-width: 550px;
+  margin-left: 5rem;
+
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.placeholder-image {
+  border-radius: var(--generalborder);
+}
+
+.placeholder-image:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25);
+}
+
+/* Responsive */
+@media (max-width: 800px) {
+  .hero-section {
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+  }
+
+  .addiction-section,
+  .our-game {
+    grid-template-columns: 1fr;
+  }
+}
