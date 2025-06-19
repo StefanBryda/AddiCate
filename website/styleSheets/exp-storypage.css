@@ -98,3 +98,9 @@
 {
     align-items: start;
 }
+
+.card-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}

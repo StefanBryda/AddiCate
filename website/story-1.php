@@ -4,7 +4,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link href="./styleSheets/mainStyle.css" type="text/css" rel="stylesheet" />
+  <link rel="stylesheet" href="./styleSheets/mainStyle.css" type="text/css">
+  <link href="./styleSheets/stories.css" type="text/css" rel="stylesheet" />
   <title>First Story</title>
 </head>
 
