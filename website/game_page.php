@@ -27,7 +27,7 @@
 
                 <div class="game-embed">
 
-                    <iframe id="godot-game" src="your-game.html" frameborder="0" allowfullscreen></iframe>
+                    <iframe id="godot-game" src="../addicate/exports/web/demo2/AddicateGameDemo2.html" frameborder="0" allowfullscreen></iframe>
 
                 </div>
 
