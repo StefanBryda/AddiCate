@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./styleSheets/mainStyle.css" rel="stylesheet" type="text/css">
+    <link href="./styleSheets/gamepage.css" rel="stylesheet" type="text/css">
     <title>Game Page</title>
 </head>
 
@@ -14,7 +15,10 @@
 
     <div class="game-container">
 
-        <h1>Game</h1>
+        <div class="game-heading">
+            <h1>Game</h1>
+        </div>
+
 
         <div class="game-split-container">
 
