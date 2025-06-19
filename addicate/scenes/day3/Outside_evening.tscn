@@ -1,6 +1,7 @@
-[gd_scene load_steps=9 format=3 uid="uid://bsna2n3no07e5"]
+[gd_scene load_steps=10 format=3 uid="uid://bsna2n3no07e5"]
 
 [ext_resource type="Texture2D" uid="uid://c4vx44xqf33jl" path="res://assets/backgrounds/PNG/City4/Bright/City4.png" id="1_8k1bi"]
+[ext_resource type="Texture2D" uid="uid://ws10w2ujcwh7" path="res://assets/backgrounds/PNG/City1/Bright/City1.png" id="2_jx3lt"]
 [ext_resource type="Texture2D" uid="uid://b5ewmucwbomkq" path="res://assets/sprites/House sign.png" id="2_phwdd"]
 [ext_resource type="Texture2D" uid="uid://ogeoarkxbow0" path="res://assets/sprites/Field sign.png" id="3_odor7"]
 [ext_resource type="Script" uid="uid://vjxo88540iqn" path="res://scripts/day1/camera_outside.gd" id="4_q2vi2"]
@@ -12,12 +13,22 @@
 [node name="Node2D" type="Node2D"]
 
 [node name="City4" type="Sprite2D" parent="."]
+visible = false
 position = Vector2(386, -340)
 texture = ExtResource("1_8k1bi")
 
 [node name="City5" type="Sprite2D" parent="."]
+visible = false
 position = Vector2(-1534, -341)
 texture = ExtResource("1_8k1bi")
+
+[node name="City2" type="Sprite2D" parent="."]
+position = Vector2(-1536, -341)
+texture = ExtResource("2_jx3lt")
+
+[node name="City1" type="Sprite2D" parent="."]
+position = Vector2(382, -340)
+texture = ExtResource("2_jx3lt")
 
 [node name="HouseSign" type="Sprite2D" parent="."]
 position = Vector2(814, -14)
