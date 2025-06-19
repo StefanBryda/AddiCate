@@ -34,7 +34,7 @@ While we’re not medical professionals, we’ve done our best to make sure ever
                 <!-- Partners Box - change name -->
                 <div class="org">
                     <h3>Partners</h3>
-                    <p>Future partner organizations listed.</p>
+                    <p>Future partner organizations list.</p>
                     <ul>
                         <li>World Health Organization (WHO)</li>
                         <li>Substance Abuse and Mental Health Services Administration (SAMHSA)</li>
