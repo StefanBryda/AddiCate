@@ -1,8 +1,9 @@
-[gd_scene load_steps=10 format=3 uid="uid://c46wot07l7dkv"]
+[gd_scene load_steps=11 format=3 uid="uid://c46wot07l7dkv"]
 
 [ext_resource type="Texture2D" uid="uid://nl822xlvw8m5" path="res://assets/backgrounds/aiden-pedroncelli-playerroom.jpg" id="1_4e0qb"]
 [ext_resource type="PackedScene" uid="uid://c4p4qfw4a0g13" path="res://scenes/ground.tscn" id="2_80lnh"]
 [ext_resource type="PackedScene" uid="uid://oxxkfex7gohr" path="res://scenes/player.tscn" id="3_hstc8"]
+[ext_resource type="Texture2D" uid="uid://ju4li1iy28pu" path="res://assets/sprites/Task1.png" id="3_o15cs"]
 [ext_resource type="Script" uid="uid://c37t5ha4w80m8" path="res://scripts/day1/door_outside.gd" id="4_fry10"]
 [ext_resource type="Texture2D" uid="uid://26i6o3jkeoby" path="res://assets/sprites/day 1 sign.png" id="5_bvw3w"]
 
@@ -32,6 +33,11 @@ zoom = Vector2(1.58, 1.58)
 position = Vector2(-514.054, -77.4603)
 scale = Vector2(0.340356, 0.340356)
 texture = ExtResource("5_bvw3w")
+
+[node name="Task1" type="Sprite2D" parent="Aiden-pedroncelli-playerroom"]
+position = Vector2(-490.582, -359.134)
+scale = Vector2(0.398886, 0.398886)
+texture = ExtResource("3_o15cs")
 
 [node name="Ground2" parent="." instance=ExtResource("2_80lnh")]
 position = Vector2(-45, -194)

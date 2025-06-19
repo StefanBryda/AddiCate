@@ -1,10 +1,11 @@
-[gd_scene load_steps=10 format=3 uid="uid://cu4gaf8emfpei"]
+[gd_scene load_steps=11 format=3 uid="uid://cu4gaf8emfpei"]
 
 [ext_resource type="Texture2D" uid="uid://nl822xlvw8m5" path="res://assets/backgrounds/aiden-pedroncelli-playerroom.jpg" id="1_dnapl"]
 [ext_resource type="PackedScene" uid="uid://c4p4qfw4a0g13" path="res://scenes/ground.tscn" id="2_1ky1k"]
 [ext_resource type="Texture2D" uid="uid://26i6o3jkeoby" path="res://assets/sprites/day 1 sign.png" id="2_a0q5v"]
 [ext_resource type="PackedScene" uid="uid://oxxkfex7gohr" path="res://scenes/player.tscn" id="3_a0q5v"]
 [ext_resource type="PackedScene" uid="uid://bpkts4joml6fe" path="res://scenes/bed.tscn" id="4_dnapl"]
+[ext_resource type="Texture2D" uid="uid://di45rssm2w0q3" path="res://assets/sprites/Task2.png" id="6_a0q5v"]
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_uwrxv"]
 distance = -68.0
@@ -65,5 +66,10 @@ position = Vector2(202, -58)
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="Bed"]
 shape = SubResource("RectangleShape2D_dnapl")
+
+[node name="Task2" type="Sprite2D" parent="."]
+position = Vector2(-221, -292)
+scale = Vector2(0.20252, 0.20252)
+texture = ExtResource("6_a0q5v")
 
 [connection signal="body_exited" from="Bed" to="Bed" method="_on_body_exited"]

@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://bh7jogtenpdl0"]
+[gd_scene load_steps=12 format=3 uid="uid://bh7jogtenpdl0"]
 
 [ext_resource type="Texture2D" uid="uid://nl822xlvw8m5" path="res://assets/backgrounds/aiden-pedroncelli-playerroom.jpg" id="1_imr1r"]
 [ext_resource type="Texture2D" uid="uid://c8fwg80c5q5p6" path="res://assets/sprites/day 3 sign.png" id="2_p5l5i"]
@@ -6,6 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://oxxkfex7gohr" path="res://scenes/player.tscn" id="3_6khdg"]
 [ext_resource type="Script" uid="uid://c13bp43ed3u3b" path="res://scripts/day3/player_hangover.gd" id="5_7afsm"]
 [ext_resource type="Script" uid="uid://ly4ne2t1xhkf" path="res://scripts/day3/door_outside.gd" id="5_p5l5i"]
+[ext_resource type="Texture2D" uid="uid://c1u7jw6mj5bdl" path="res://assets/sprites/Task4.png" id="7_jgrhp"]
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_uwrxv"]
 distance = -68.0
@@ -68,5 +69,10 @@ script = ExtResource("5_p5l5i")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Door outside"]
 shape = SubResource("RectangleShape2D_qxlp7")
+
+[node name="Task4" type="Sprite2D" parent="."]
+position = Vector2(-225, -292)
+scale = Vector2(0.159231, 0.159231)
+texture = ExtResource("7_jgrhp")
 
 [connection signal="body_entered" from="Door outside" to="Door outside" method="_on_body_entered"]
