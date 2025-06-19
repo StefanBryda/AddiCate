@@ -25,11 +25,14 @@
             </div>
 
             <div class="video-info">
-                <h2>What is Addiction</h2>
+                <h2>Understanding Addiction: More Than a Choice</h2>
                 <p>
-                    This video walks you through the journey of someone living with addiction.
-                    From daily struggles to moments of recovery, it provides emotional insight
-                    and educational value. Watch carefully and reflect on how support can change lives.
+                    Addiction is not a lack of willpower—it's a chronic brain disease that affects how people think, feel, and behave. 
+                    This short video breaks down what addiction really is, how it impacts the brain, and why compassion and treatment 
+                    are essential. Whether you're personally affected or want to better understand someone who is, this video offers a 
+                    clear, science-based perspective to help end the stigma.
+
+                    Recovery is possible. Understanding is the first step
                 </p>
             </div>
         </section>

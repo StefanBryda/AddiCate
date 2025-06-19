@@ -1,0 +1,50 @@
+.subpage-main {
+    padding: 5rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.subpage-title {
+    font-size: 2.5rem;
+    color: black;
+    /* or any strong accent color */
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.video-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    max-width: 1301px;
+    
+    align-items: center;
+}
+
+.video-container video {
+    height: 589px;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+    margin-left: 144px;
+    margin-top: 19px;
+}
+
+.video-info {
+    background-color: rgba(126, 87, 194, 0.85);
+    /* Purple tint */
+    color: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+}
+
+.video-info h2 {
+    margin-top: 0;
+    font-size: 1.6rem;
+}
+
+.video-info p {
+    font-size: 1rem;
+    line-height: 1.6;
+}
