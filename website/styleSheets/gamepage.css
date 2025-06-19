@@ -28,7 +28,7 @@
 .game-left-container {
     display: flex;
     flex-direction: column;
-    min-width: 50rem;
+    min-width: 48rem;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.632);
     border-radius: 0.6rem;
 }
@@ -52,7 +52,7 @@
 .game-right-container {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 3rem;
 }
 
 .game-description,
