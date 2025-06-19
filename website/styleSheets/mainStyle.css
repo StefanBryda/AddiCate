@@ -423,7 +423,7 @@ header {
 }
 
 .card {
-  background-color: rgba(255, 255, 255, 0.95);
+  background-color: #7F55B1;
   border-radius: var(--generalborder);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
   overflow: hidden;
@@ -448,12 +448,12 @@ header {
 .card-info h2 {
   margin: 0 0 0.5rem;
   font-size: 1.2rem;
-  color: var(--text-dark);
+  color: white;
 }
 
 .card-info p {
   font-size: 0.95rem;
-  color: var(--text-medium);
+  color: white;
 }
 
 /* Experience - Video */
@@ -466,7 +466,7 @@ header {
 
 .subpage-title {
   font-size: 2.5rem;
-  color: black;
+  color: #148F7C;
   /* or any strong accent color */
   text-align: center;
   margin-bottom: 3rem;
@@ -683,7 +683,7 @@ li {
 }
 
 .game-review button {
-  background-color: #999;
+  background-color: #148F7C;
   color: white;
   border: none;
   padding: 0.8rem 1.5rem;
