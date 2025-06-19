@@ -428,6 +428,7 @@ header {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
   overflow: hidden;
   transition: transform 0.3s ease;
+  height: 100%;
 }
 
 .card:hover {
@@ -455,6 +456,13 @@ header {
   font-size: 0.95rem;
   color: var(--text-medium);
 }
+
+.card-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
 
 /* Experience - Video */
 .subpage-main {
@@ -805,3 +813,35 @@ footer {
   margin-right: 0px;
   box-sizing: border-box;
 }
+
+/* story page */
+.story-main {
+  max-width: 900px;
+  margin: auto;
+  line-height: 1.6;
+
+}
+
+.story-title {
+  font-size: 2.5rem;
+  padding-top: 3rem;
+  margin-bottom: 2.5rem;
+  text-align: center;
+
+}
+
+.story-navigation {
+  margin: 30px;
+  text-align: center;
+}
+
+.story-navigation a {
+  text-decoration: none;
+  color: #0077cc;
+  margin: 1 1rem;
+  font-weight: 600;
+}
+.story-navigation a + a::before {
+  content: " | ";
+}
+

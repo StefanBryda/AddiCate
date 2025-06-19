@@ -16,23 +16,26 @@
         <h1 class="subpage-title">Stories</h1>
 
         <section class="card-grid">
-            <!-- Story 1 -->
-            <div class="card">
-                <img src="./images/addiction.png" alt="Story 1">
-                <div class="card-info">
-                    <h2>Interview 1: A mans story to recovery</h2>
-                    <p>*Add info on twan sharing his story </p>
+            <a href="story-1.php" class="card-link">
+                <!-- Story 1 -->
+                <div class="card">
+                    <img src="./images/addiction.png" alt="Story 1">
+                    <div class="card-info">
+                        <h2>Interview 1: A mans story to recovery</h2>
+                        <p>*Add info on twan sharing his story </p>
+                    </div>
                 </div>
-            </div>
+            </a>
 
-            <!-- Story 2 -->
-            <div class="card">
-                <img src="./images/puzzle.jpeg" alt="Story 2">
-                <div class="card-info">
-                    <h2>Interview 2: </h2>
-                    <p>Understanding the emotional side of addiction and rebuilding trust.</p>
+            <a href="story-2.php" class="card-link">
+                <div class="card">
+                    <img src="./images/puzzle.jpeg" alt="Story 2">
+                    <div class="card-info">
+                        <h2>Interview 2: </h2>
+                        <p>Understanding the emotional side of addiction and rebuilding trust.</p>
+                    </div>
                 </div>
-            </div>
+            </a>
 
             <!-- Coming Soon -->
             <div class="card">
