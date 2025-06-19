@@ -1,9 +1,9 @@
-[gd_scene load_steps=9 format=3 uid="uid://b2dxbbivf2kj3"]
+[gd_scene load_steps=9 format=3 uid="uid://bnyea723ikga"]
 
-[ext_resource type="Texture2D" uid="uid://nl822xlvw8m5" path="res://assets/backgrounds/aiden-pedroncelli-playerroom.jpg" id="1_8ht8e"]
-[ext_resource type="PackedScene" uid="uid://c4p4qfw4a0g13" path="res://scenes/ground.tscn" id="2_x3qg6"]
-[ext_resource type="PackedScene" uid="uid://oxxkfex7gohr" path="res://scenes/player.tscn" id="3_lnlr1"]
-[ext_resource type="PackedScene" uid="uid://bpkts4joml6fe" path="res://scenes/bed.tscn" id="4_egabd"]
+[ext_resource type="Texture2D" uid="uid://nl822xlvw8m5" path="res://assets/backgrounds/aiden-pedroncelli-playerroom.jpg" id="1_ywy30"]
+[ext_resource type="PackedScene" uid="uid://c4p4qfw4a0g13" path="res://scenes/ground.tscn" id="2_nj6ul"]
+[ext_resource type="PackedScene" uid="uid://oxxkfex7gohr" path="res://scenes/player.tscn" id="3_dgix4"]
+[ext_resource type="Script" uid="uid://c37t5ha4w80m8" path="res://scripts/day1/door_outside_day1.gd" id="4_06n0e"]
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_uwrxv"]
 distance = -68.0
@@ -14,8 +14,7 @@ normal = Vector2(0.999935, -0.0113999)
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_lnu2h"]
 normal = Vector2(-0.999972, 0.00751858)
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_dnapl"]
-size = Vector2(239, 166)
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qxlp7"]
 
 [node name="Bedroom" type="Node2D"]
 position = Vector2(4, 16)
@@ -23,17 +22,17 @@ position = Vector2(4, 16)
 [node name="Aiden-pedroncelli-playerroom" type="Sprite2D" parent="."]
 position = Vector2(-12, -146)
 scale = Vector2(0.426025, 0.426025)
-texture = ExtResource("1_8ht8e")
+texture = ExtResource("1_ywy30")
 
 [node name="Camera2D" type="Camera2D" parent="Aiden-pedroncelli-playerroom"]
 zoom = Vector2(1.58, 1.58)
 
-[node name="Ground2" parent="." instance=ExtResource("2_x3qg6")]
+[node name="Ground2" parent="." instance=ExtResource("2_nj6ul")]
 position = Vector2(-45, -194)
 rotation = -3.13217
 
-[node name="Player" parent="." groups=["Player"] instance=ExtResource("3_lnlr1")]
-position = Vector2(-275, -75)
+[node name="Player" parent="." groups=["Player"] instance=ExtResource("3_dgix4")]
+position = Vector2(-22, -115)
 
 [node name="Ground" type="StaticBody2D" parent="."]
 position = Vector2(-6, -7)
@@ -49,13 +48,16 @@ position = Vector2(-368, -123)
 shape = SubResource("WorldBoundaryShape2D_yqjtg")
 
 [node name="Right wall" type="StaticBody2D" parent="."]
-position = Vector2(104, -97)
+position = Vector2(89, -102)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Right wall"]
 shape = SubResource("WorldBoundaryShape2D_lnu2h")
 
-[node name="Bed" parent="." instance=ExtResource("4_egabd")]
-position = Vector2(202, -58)
+[node name="Door outside" type="Area2D" parent="."]
+position = Vector2(-365, -100)
+script = ExtResource("4_06n0e")
 
-[node name="CollisionShape2D2" type="CollisionShape2D" parent="Bed"]
-shape = SubResource("RectangleShape2D_dnapl")
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Door outside"]
+shape = SubResource("RectangleShape2D_qxlp7")
+
+[connection signal="body_entered" from="Door outside" to="Door outside" method="_on_body_entered"]

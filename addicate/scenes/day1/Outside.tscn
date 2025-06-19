@@ -4,9 +4,9 @@
 [ext_resource type="Texture2D" uid="uid://c4vx44xqf33jl" path="res://assets/backgrounds/PNG/City4/Bright/City4.png" id="2_k7f4w"]
 [ext_resource type="PackedScene" uid="uid://c4p4qfw4a0g13" path="res://scenes/ground.tscn" id="3_m64sd"]
 [ext_resource type="Texture2D" uid="uid://ogeoarkxbow0" path="res://assets/sprites/Field sign.png" id="3_ppadw"]
-[ext_resource type="Script" uid="uid://vjxo88540iqn" path="res://scenes/camera_outside.gd" id="4_japof"]
+[ext_resource type="Script" uid="uid://vjxo88540iqn" path="res://scripts/day1/camera_outside.gd" id="4_japof"]
 [ext_resource type="PackedScene" uid="uid://cq2porugkeju4" path="res://scenes/door.tscn" id="4_rn6ye"]
-[ext_resource type="Script" uid="uid://detvqhc34d507" path="res://scripts/door_field_day1.gd" id="5_rn6ye"]
+[ext_resource type="Script" uid="uid://detvqhc34d507" path="res://scripts/day1/door_field_day1.gd" id="5_rn6ye"]
 [ext_resource type="Texture2D" uid="uid://b5ewmucwbomkq" path="res://assets/sprites/House sign.png" id="6_hfmcr"]
 
 [node name="Node2D" type="Node2D"]

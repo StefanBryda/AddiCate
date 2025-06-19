@@ -59,3 +59,5 @@ position = Vector2(202, -58)
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="Bed"]
 shape = SubResource("RectangleShape2D_dnapl")
+
+[connection signal="body_exited" from="Bed" to="Bed" method="_on_body_exited"]

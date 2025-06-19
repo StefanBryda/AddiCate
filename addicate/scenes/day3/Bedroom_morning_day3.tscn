@@ -1,9 +1,9 @@
-[gd_scene load_steps=9 format=3 uid="uid://bnyea723ikga"]
+[gd_scene load_steps=9 format=3 uid="uid://bh7jogtenpdl0"]
 
-[ext_resource type="Texture2D" uid="uid://nl822xlvw8m5" path="res://assets/backgrounds/aiden-pedroncelli-playerroom.jpg" id="1_ywy30"]
-[ext_resource type="PackedScene" uid="uid://c4p4qfw4a0g13" path="res://scenes/ground.tscn" id="2_nj6ul"]
-[ext_resource type="PackedScene" uid="uid://oxxkfex7gohr" path="res://scenes/player.tscn" id="3_dgix4"]
-[ext_resource type="Script" uid="uid://c37t5ha4w80m8" path="res://scripts/door_outside_day1.gd" id="4_06n0e"]
+[ext_resource type="Texture2D" uid="uid://nl822xlvw8m5" path="res://assets/backgrounds/aiden-pedroncelli-playerroom.jpg" id="1_imr1r"]
+[ext_resource type="PackedScene" uid="uid://c4p4qfw4a0g13" path="res://scenes/ground.tscn" id="2_wmoin"]
+[ext_resource type="PackedScene" uid="uid://oxxkfex7gohr" path="res://scenes/player.tscn" id="3_6khdg"]
+[ext_resource type="Script" uid="uid://c37t5ha4w80m8" path="res://scripts/day1/door_outside_day1.gd" id="4_dtodc"]
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_uwrxv"]
 distance = -68.0
@@ -22,16 +22,16 @@ position = Vector2(4, 16)
 [node name="Aiden-pedroncelli-playerroom" type="Sprite2D" parent="."]
 position = Vector2(-12, -146)
 scale = Vector2(0.426025, 0.426025)
-texture = ExtResource("1_ywy30")
+texture = ExtResource("1_imr1r")
 
 [node name="Camera2D" type="Camera2D" parent="Aiden-pedroncelli-playerroom"]
 zoom = Vector2(1.58, 1.58)
 
-[node name="Ground2" parent="." instance=ExtResource("2_nj6ul")]
+[node name="Ground2" parent="." instance=ExtResource("2_wmoin")]
 position = Vector2(-45, -194)
 rotation = -3.13217
 
-[node name="Player" parent="." groups=["Player"] instance=ExtResource("3_dgix4")]
+[node name="Player" parent="." groups=["Player"] instance=ExtResource("3_6khdg")]
 position = Vector2(-22, -115)
 
 [node name="Ground" type="StaticBody2D" parent="."]
@@ -55,7 +55,7 @@ shape = SubResource("WorldBoundaryShape2D_lnu2h")
 
 [node name="Door outside" type="Area2D" parent="."]
 position = Vector2(-365, -100)
-script = ExtResource("4_06n0e")
+script = ExtResource("4_dtodc")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Door outside"]
 shape = SubResource("RectangleShape2D_qxlp7")

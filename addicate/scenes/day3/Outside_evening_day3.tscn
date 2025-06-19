@@ -3,12 +3,12 @@
 [ext_resource type="Texture2D" uid="uid://c4vx44xqf33jl" path="res://assets/backgrounds/PNG/City4/Bright/City4.png" id="1_8k1bi"]
 [ext_resource type="Texture2D" uid="uid://b5ewmucwbomkq" path="res://assets/sprites/House sign.png" id="2_phwdd"]
 [ext_resource type="Texture2D" uid="uid://ogeoarkxbow0" path="res://assets/sprites/Field sign.png" id="3_odor7"]
-[ext_resource type="Script" uid="uid://vjxo88540iqn" path="res://scenes/camera_outside.gd" id="4_q2vi2"]
+[ext_resource type="Script" uid="uid://vjxo88540iqn" path="res://scripts/day1/camera_outside.gd" id="4_q2vi2"]
 [ext_resource type="PackedScene" uid="uid://oxxkfex7gohr" path="res://scenes/player.tscn" id="5_21id2"]
 [ext_resource type="PackedScene" uid="uid://c4p4qfw4a0g13" path="res://scenes/ground.tscn" id="6_08lbq"]
 [ext_resource type="PackedScene" uid="uid://cq2porugkeju4" path="res://scenes/door.tscn" id="7_f18rt"]
-[ext_resource type="Script" uid="uid://5b376d54e7o7" path="res://scripts/door_inside_day1_evening.gd" id="8_j4g34"]
-[ext_resource type="Script" uid="uid://detvqhc34d507" path="res://scripts/door_field_day1.gd" id="9_4pal3"]
+[ext_resource type="Script" uid="uid://5b376d54e7o7" path="res://scripts/day1/door_inside_day1_evening.gd" id="8_j4g34"]
+[ext_resource type="Script" uid="uid://detvqhc34d507" path="res://scripts/day1/door_field_day1.gd" id="9_4pal3"]
 
 [node name="Node2D" type="Node2D"]
 
