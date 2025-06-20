@@ -14,7 +14,7 @@
 
 .game-heading h1 {
     font-size: var(--font-size-xxl);
-    color: #7F55B1;
+    color: black;
 }
 
 /* Grid layout */
