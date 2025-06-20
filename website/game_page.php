@@ -39,6 +39,7 @@
                 <div class="game-description">
 
                     <h2>Game Story</h2>
+
                     <p>By participating in this game, you will be able to experience the life of Greg. You will see and learn, how easily a person can get addicted to anything.<br>
                     CONTENT WARNING: Game contains motives of addiction<br>
                     (This is a demo version 3)

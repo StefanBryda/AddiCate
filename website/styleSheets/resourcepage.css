@@ -13,7 +13,7 @@ hr {
     justify-content: center;
     font-size: 2.8rem;
     padding-bottom: 3rem;
-    color: black;
+    color: #7F55B1;
     padding-top: 2rem;
 }
 
@@ -92,6 +92,15 @@ hr {
     padding: 1.8rem;
     border-radius: 8px;
     box-shadow: var(--green-shadow);
+}
+
+.org {
+    background-color: var(--text-box);
+    color: white;
+}
+.research {
+    background-color: var(--text-box);
+    color: white;
 }
 
 .reference{
