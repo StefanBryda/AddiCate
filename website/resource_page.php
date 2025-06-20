@@ -25,6 +25,7 @@
                 <!-- Research Box -->
                 <div class="research">
                     <h3>Our Research</h3>
+                    <hr>
                     <p>Our Research, AddiCate was created to raise awareness and reduce the stigma around addiction. We started by exploring trusted sources, like scientific studies, health articles, and real-life stories, to better understand how addiction affects people’s thoughts, emotions, and daily lives. We also listened closely to the voices of those who have experienced addiction, as well as the people supporting them. While we’re not medical professionals, we’ve done our best to make sure everything you see on our platform is respectful, relatable, and rooted in facts. Our goal is not to give expert advice, but to offer understanding, connection, and a safe space where no one feels judged.
                     </p>
                 </div>
@@ -32,6 +33,7 @@
                 <!-- Partners Box - change name -->
                 <div class="org">
                     <h3>Partners</h3>
+                    <hr>
                     <p>Future partner organizations listed.</p>
                     <ul>
                         <li>World Health Organization (WHO)</li>

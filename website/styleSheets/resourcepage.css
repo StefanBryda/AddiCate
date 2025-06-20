@@ -5,7 +5,7 @@ hr {
     background-color: #0d685a;
     /* or use a variable like var(--accent-color) */
     margin: 10px 0 20px 0;
-    border-radius: 2px; 
+    border-radius: 2px;
 }
 
 .r-heading {
@@ -13,7 +13,6 @@ hr {
     justify-content: center;
     font-size: 2.8rem;
     padding-bottom: 3rem;
-    color: #7F55B1;
     padding-top: 2rem;
 }
 
@@ -37,6 +36,8 @@ hr {
     width: 100%;
     max-width: 300px;
     min-width: unset;
+    background-color: var(--text-box);
+    color: white;
 }
 
 /* Clickable header */
@@ -53,14 +54,30 @@ hr {
 .reference summary::before {
     content: '▶';
     font-size: 1.2rem;
-    color: var(--text-dark);
     margin-right: 0.5rem;
     transition: transform 0.4s ease-in-out;
     display: inline-block;
+    color: white;
 }
 
-.reference[open] summary::before{
-    transform:rotate(90deg);
+.reference[open] summary::before {
+    transform: rotate(90deg);
+}
+
+.reference li {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    position: relative;
+}
+
+.reference li ::before {
+    content: "•";
+    color: var(--text-light);
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
 }
 
 /* When open, expand the content */
@@ -68,6 +85,8 @@ hr {
     max-height: 500px;
     /* Enough to fit your content */
     opacity: 1;
+    /* word-wrap: break-word;
+    overflow-wrap: break-word; */
 }
 
 /* Left side - two stacked boxes */
@@ -92,20 +111,6 @@ hr {
     padding: 1.8rem;
     border-radius: 8px;
     box-shadow: var(--green-shadow);
-}
-
-.org {
-    background-color: var(--text-box);
-    color: white;
-}
-.research {
-    background-color: var(--text-box);
-    color: white;
-}
-
-.reference{
-    background-color: var(--text-box);
-    color: white;
 }
 
 /* Responsive adjustments */
