@@ -5,6 +5,9 @@ ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
+$config = require 'config.php';
+$apiKey = $config['SENDGRID_API_KEY'];
+
 require __DIR__ . '/phpmailer/src/Exception.php';
 require __DIR__ . '/phpmailer/src/PHPMailer.php';
 require __DIR__ . '/phpmailer/src/SMTP.php'; // Required if you use SMTP
@@ -29,7 +32,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $mail->Host       = 'smtp.sendgrid.net';    // which mail server it needs to connect to
         $mail->SMTPAuth   = true;                   // use authentication
         $mail->Username   = 'apikey';               // SendGrid
-        $mail->Password   = getenv('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'); 
+        $mail->Password   = $apiKey; 
         $mail->SMTPSecure = PHPMailer\PHPMailer\PHPMailer::ENCRYPTION_STARTTLS; // Use TLS encryption
         $mail->Port       = 587;                    // Standard port for TLS
 
