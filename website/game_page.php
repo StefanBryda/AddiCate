@@ -39,8 +39,10 @@
                 <div class="game-description">
 
                     <h2>Game Story</h2>
-                    <p>This is where your game description and story will go. Lorem ipsum dolor sit amet, consectetur
-                        adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <p>By participating in this game, you will be able to experience the life of Greg. You will see and learn, how easily a person can get addicted to anything.<br>
+                    CONTENT WARNING: Game contains motives of addiction<br>
+                    (This is a demo version 3)
+                    </p>
 
                 </div>
 
