@@ -50,8 +50,8 @@
         </section>
 
         <nav class="story-navigation">
-            <a href="exp-story.php">Return to Stories List</a> 
-            <a href="story-1.php">Previous Story</a>
+          <a href="story-1.php">Previous Story</a>
+          <a href="exp-story.php">Return to Stories List</a> 
         </nav>
     </main>
 

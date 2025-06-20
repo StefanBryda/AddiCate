@@ -31,8 +31,8 @@
           <p> If you we’re where I was, I’d say: “Use more. The more you use, the sooner you get recovery.” Recovery is the best thing that happened in my life.</p>
       </section>
       <nav class="story-navigation">
-            <a href="story-2.php">Next Story</a> 
-            <a href="exp-story.php">Return to Stories List</a>
+        <a href="exp-story.php">Return to Stories List</a>
+        <a href="story-2.php">Next Story</a> 
       </nav>
     </main>
 
