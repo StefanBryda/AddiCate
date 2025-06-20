@@ -110,14 +110,15 @@ body> :nth-child(2) {
 
 .addiction-box {
     grid-column: 2/3;
-    background: var(--green-main);
-    color: white;
+    color: var(--text-dark);
     padding: 1.5rem;
     border-radius: var(--generalborder);
     text-align: left;
 
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+    box-shadow: var(--purple-shadow);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    width: 36rem;
 }
 
 .addiction-box p {
@@ -227,6 +228,14 @@ body> :nth-child(2) {
 
 .placeholder-image {
     border-radius: var(--generalborder);
+    margin-right: 5rem;
+}
+
+.placeholder-image img {
+    width: 100%;
+    height: auto;
+    border-radius: var(--generalborder);
+    display: block;
 }
 
 .placeholder-image:hover {

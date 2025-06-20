@@ -86,7 +86,9 @@
             We have released a demo version of the game and if we get more support we would be able to demonstrate the story better.
           </p>
         </div>
-        <div class="placeholder-image"></div>
+        <div class="placeholder-image">
+          <img src="./images/tumbnail.png" alt="Game Placeholder Image" />
+        </div>
       </div>
     </section>
 

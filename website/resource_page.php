@@ -34,15 +34,9 @@
                 <div class="org">
                     <h3>Partners</h3>
                     <hr>
-                    <p>Future partner organizations listed.</p>
                     <ul>
-                        <li>World Health Organization (WHO)</li>
-                        <li>Substance Abuse and Mental Health Services Administration (SAMHSA)</li>
-                        <li>Trimbos-instituut (Netherlands Institute of Mental Health and Addiction)</li>
-                        <li>Take This</li>
-                        <li>National Institute on Drug Abuse (NIDA)</li>
-                        <li>National Alliance on Mental Illness (NAMI)</li>
-                        <li>SMART Recovery</li>
+                        <li>NHL Stenden University of Applied Sciences</li>
+                        <li>MDT Project - Invisible Heros</li>
                     </ul>
                     
                 </div>
