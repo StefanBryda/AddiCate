@@ -11,7 +11,7 @@
 
         <p>&copy; 2025 - AddiCate, Inc. All rights reserved. Address Address</p>
         <p>
-          <a href="#">Privacy Policy</a> | <a href="#">Terms & Conditions</a>
+          <a href="#">Privacy Policy</a> | <a href="terms&conditions.html">Terms & Conditions</a>
         </p>
 
       </div>
