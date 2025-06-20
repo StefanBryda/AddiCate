@@ -13,14 +13,15 @@ hr {
     justify-content: center;
     font-size: 2.8rem;
     padding-bottom: 3rem;
-    padding-top: 2rem;
 }
 
 .resource {
+    flex-grow: 1;
     max-width: 1400px;
     margin: 0 auto;
     padding: 90px 60px 40px;
-    min-height: 83.2vh
+    /* min-height: 83.2vh */
+    overflow-y: auto;
 }
 
 .split-contain {
@@ -30,14 +31,13 @@ hr {
 }
 
 .reference {
-    padding: 1rem;
-    border-radius: 8px;
     margin: 0;
     width: 100%;
-    max-width: 300px;
+    max-width: 353px;
     min-width: unset;
     background-color: var(--text-box);
     color: white;
+    max-height: 34rem;
 }
 
 /* Clickable header */
@@ -64,29 +64,46 @@ hr {
     transform: rotate(90deg);
 }
 
-.reference li {
-    font-size: 1rem;
-    margin-bottom: 10px;
-    padding-left: 10px;
-    position: relative;
-}
-
-.reference li ::before {
-    content: "•";
-    color: var(--text-light);
-    font-weight: bold;
-    display: inline-block;
-    width: 1em;
-    margin-left: -1em;
-}
-
 /* When open, expand the content */
 .reference[open] .ref-content {
     max-height: 500px;
     /* Enough to fit your content */
     opacity: 1;
-    /* word-wrap: break-word;
-    overflow-wrap: break-word; */
+
+    overflow-y: auto;
+    overflow-x: hidden;
+
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+
+    padding-left: 0;
+    padding-right: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.ref-content ul {
+    list-style: disc;
+    list-style-position: inside;
+    width: 100%;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+.ref-content li {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    position: relative;
+    color: white;
+}
+
+.ref-content li ::before {
+    content: "•";
+    color: var(--text-light);
+    font-weight: bold;
+    display: inline-block;
 }
 
 /* Left side - two stacked boxes */
@@ -94,6 +111,7 @@ hr {
     display: flex;
     flex-direction: column;
     gap: 3rem;
+    justify-content: space-between;
 }
 
 /* Right side */
