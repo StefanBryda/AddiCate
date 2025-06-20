@@ -1,7 +1,7 @@
 # AddiCate
 
 ## Intro:
-This product is part of the Project Innovate and Invisible Heroes created by group IT1D. The product itself is a website and coresponding videogame which role is to educate people about the problem ofaddiction.
+This product is part of the Project Innovate and Invisible Heroes created by group IT1D. The product itself is a website and coresponding videogame which role is to educate people about the problem of addiction.
 
 ## Team members:
 - Stefania Panainte
