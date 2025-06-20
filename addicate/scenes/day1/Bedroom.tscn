@@ -26,12 +26,12 @@ rotation = -3.13217
 position = Vector2(-22, -115)
 
 [node name="Aiden-pedroncelli-playerroom" type="Sprite2D" parent="Player"]
-position = Vector2(10, -31)
-scale = Vector2(0.4, 0.4)
+position = Vector2(30.1706, -18.9)
+scale = Vector2(0.423633, 0.423633)
 texture = ExtResource("1_4e0qb")
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
-position = Vector2(10, -31)
+position = Vector2(28, -29)
 scale = Vector2(0.4, 0.4)
 zoom = Vector2(1.58, 1.58)
 
