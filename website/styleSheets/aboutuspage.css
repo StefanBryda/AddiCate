@@ -35,7 +35,7 @@ p {
 
 .aboutus-title {
   font-size: var(--font-size-xxl);
-  color: #7F55B1;
+  color: black;
   display: flex;
   justify-content: center;
   margin-top: 3rem;
@@ -44,7 +44,6 @@ p {
 .aboutus-box1,
 .aboutus-box4 {
   border-radius: 20px;
-  background-color:#148F7C;
   padding: 30px;
   text-align: left;
   max-height: 48rem;
@@ -61,15 +60,18 @@ p {
   justify-content: center;
   align-items: center;
 
-  background-color: var(--text-box);
+  margin-top: 13rem;
+  margin-bottom: 21rem;
+
+  /* background-color: var(--text-box); */
 }
 
 .aboutus-box1 h3 {
-  color: white;
+  color: black;
 }
 
 .aboutus-box1 p {
-  color: white;
+  color: var(--text-dark);
 }
 
 .aboutus-box3 {
@@ -90,18 +92,19 @@ p {
   grid-column: 2 / 3;
   grid-row: 2 / 3;
   margin: 0 5% 140px 5%;
-  background-color: var(--text-box);
+  /* background-color: var(--text-box); */
 }
 
 .aboutus-box4 h3 {
   margin-bottom: 15px;
-  color: white;
+  color: black;
 }
 
 .member-list {
   list-style: none;
   padding-left: 0;
   margin: 0;
+  color: var(--text-dark);
 }
 
 .member-list li {
@@ -109,12 +112,12 @@ p {
   margin-bottom: 10px;
   padding-left: 10px;
   position: relative;
-  color: white;
+  color: var(--text-dark);
 }
 
 .member-list li::before {
   content: "•";
-  color: var(--text-light);
+  /* color: var(--text-dark); */
   font-weight: bold;
   display: inline-block;
   width: 1em;
