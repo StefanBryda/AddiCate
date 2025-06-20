@@ -30,7 +30,7 @@ scale = Vector2(0.423709, 0.423709)
 texture = ExtResource("3_ppadw")
 
 [node name="Camera2D" type="Camera2D" parent="."]
-position = Vector2(603, -140)
+position = Vector2(592, -140)
 script = ExtResource("4_japof")
 player = NodePath("../Player")
 

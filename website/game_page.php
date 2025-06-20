@@ -27,7 +27,7 @@
 
                 <div class="game-embed">
 
-                    <iframe id="godot-game" src="your-game.html" frameborder="0" allowfullscreen></iframe>
+                    <iframe id="godot-game" src="../addicate/exports/web/demo3/AddicateGameDemo3.html" frameborder="0" allowfullscreen></iframe>
 
                 </div>
 
@@ -39,8 +39,11 @@
                 <div class="game-description">
 
                     <h2>Game Story</h2>
-                    <p>Our game showcases the life of a person going through addiction, not just the struggles but also their recovery process. 
-            We have released a demo version of the game and if we get more support we would be able to demonstrate the story better.</p>
+
+                    <p>By participating in this game, you will be able to experience the life of Greg. You will see and learn, how easily a person can get addicted to anything.<br>
+                    CONTENT WARNING: Game contains motives of addiction<br>
+                    (This is a demo version 3)
+                    </p>
 
                 </div>
 
