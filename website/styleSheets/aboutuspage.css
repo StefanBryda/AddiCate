@@ -18,10 +18,6 @@ hr {
   border-radius: 2px;
 }
 
-p {
-  color: var(--text-dark);
-}
-
 .aboutus-main-container {
   /* Clear the fixed header */
   display: grid;
