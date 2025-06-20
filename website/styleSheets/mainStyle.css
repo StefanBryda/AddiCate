@@ -56,32 +56,36 @@ header {
   top: 0;
   left: 0;
   right: 0;
-  height: 60px;
+  min-height: 60px;
   background-color: var(--purple-main);
   color: white;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 20px;
+  padding: 0 1.5rem;
   z-index: 1000;
 }
 
 .logo {
-  width: 50px;
+  width: 4rem;
   height: auto;
+  padding-right: 15px;
 }
 
 
 .nav-links {
   display: flex;
-  gap: 200px;
-  padding-right: 200px;
+  justify-content: center;
+  gap:10rem;
+  align-items: center;
+  flex-grow: 1;
 }
 
 .nav-links a {
   color: white;
   text-decoration: none;
   font-weight: bold;
+  font-size: var(--font-size-md);
 }
 
 .nav-links a:hover {

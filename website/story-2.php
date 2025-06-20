@@ -13,7 +13,7 @@
     <?php include 'header.php'; ?>
 
     <main class="story-main">
-        <h1 class="story-title">I Just Needed Safety</h1>
+        <h1 class="story-title">Finding Safety</h1>
 
         <section class="story-body">
             <p>I was very, very young when I first came into contact with substances. It was mostly because my dad’s an addict. He would never admit it, though, because he functions quite well. He’s a social worker himself.<br>I was only 7 when I first got liquor and wine, and it became quite normal for me. But as the years went on, around age 11, I developed an eating disorder. For me, addiction wasn’t just about substances, so I started eating very little.</p>
