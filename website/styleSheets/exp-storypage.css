@@ -8,7 +8,8 @@
 .subpage-title {
     font-size: 2.5rem;
     margin-bottom: 3rem;
-    color: #7F55B1;
+    color: black;
+    margin-top: 2rem;
 }
 
 .card-grid {
