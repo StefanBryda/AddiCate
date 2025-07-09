@@ -34,6 +34,19 @@ CREATE TABLE `guestbook` (
   `timestamp` datetime DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `stories`
+--
+
+CREATE TABLE `stories` (
+  `id` int(11) NOT NULL,
+  `name` varchar(100) NOT NULL,
+  `story` text NOT NULL,
+  `timestamp` datetime DEFAULT current_timestamp()
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
 --
 -- Indexes for dumped tables
 --
@@ -45,6 +58,12 @@ ALTER TABLE `guestbook`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `stories`
+--
+ALTER TABLE `stories`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- AUTO_INCREMENT for dumped tables
 --
 
@@ -53,6 +72,12 @@ ALTER TABLE `guestbook`
 --
 ALTER TABLE `guestbook`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+
+--
+-- AUTO_INCREMENT for table `stories`
+--
+ALTER TABLE `stories`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
