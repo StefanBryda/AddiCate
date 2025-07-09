@@ -48,7 +48,7 @@ if (is_dir('stories')) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./styleSheets/mainStyle.css" type="text/css" rel="stylesheet">
-    <link href="./styleSheets/exp-storypage.css" type="text/css" rel="stylesheet">
+    <link href="./styleSheets/exp-overview.css" type="text/css" rel="stylesheet">
     <title>Community Stories Overview</title>
 </head>
 <body>

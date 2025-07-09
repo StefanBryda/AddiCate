@@ -13,10 +13,18 @@
 }
 
 .card-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: 2rem;
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
+    gap: 2rem;
+    align-items: stretch;
+}
+
+@media (max-width: 900px) {
+  .card-grid {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .card {
@@ -28,7 +36,9 @@
     cursor: pointer;
     display: flex;
     flex-direction: column;
-    min-height: 480px; /* Ensures equal height for all cards */
+    min-height: 520px;
+    max-height: 520px;
+    width: 350px;
     position: relative;
 }
 
@@ -43,6 +53,11 @@
     padding: 1rem 1.5rem;
     text-align: left;
     flex-grow: 1;
+    min-height: 80px;
+    max-height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .card-info h2 {

@@ -39,7 +39,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['submit_story'])) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./styleSheets/mainStyle.css" type="text/css" rel="stylesheet">
-    <link href="./styleSheets/exp-storypage.css" type="text/css" rel="stylesheet">
+    <link href="./styleSheets/storyupload.css" type="text/css" rel="stylesheet">
     <title>Share Your Story</title>
 </head>
 <body>
