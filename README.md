@@ -19,7 +19,7 @@ This product is part of the Project Innovate and Invisible Heroes created by gro
 2. Create a new database named `addicate`.
 3. Go to the Import tab and upload the SQL file found at:  
    `AddiCate/website/database/addicate.sql`
-4. Once imported, the tables will be ready and used.
+4. Once imported, the required tables and data will be available in the database.
 
 ## Tips for working on the product
 - All files related to the website are stored in folder "AddiCate/website" with the exception of exported game, which is stored on "AddiCate/addicate/exports/web/demo3"

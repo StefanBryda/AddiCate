@@ -76,7 +76,7 @@ header {
 .nav-links {
   display: flex;
   justify-content: center;
-  gap:10rem;
+  gap: 8rem;
   align-items: center;
   flex-grow: 1;
 }

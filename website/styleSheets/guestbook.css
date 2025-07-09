@@ -1,0 +1,70 @@
+body {
+  margin-top: 3rem;
+  background-color: var(--light-bg);
+  color: var(--text-dark);
+}
+
+main {
+  padding: 3rem;
+}
+
+h1 {
+  font-size: var(--font-size-xxl);
+  color: var(--text-dark);
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.button-bar {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.add-message-button {
+  background-color: var(--green-main);
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border-radius: var(--generalborder);
+  text-decoration: none;
+  font-size: var(--font-size-md);
+  font-weight: bold;
+  box-shadow: var(--green-shadow);
+}
+
+.add-message-button:hover {
+  background-color: #0f6f60;
+}
+
+.message {
+  background-color: var(--primary-bg);
+  border-radius: var(--generalborder);
+  padding: var(--box-padding);
+  margin-bottom: 1.5rem;
+  box-shadow: var(--shadow-medium);
+}
+
+.message .message-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 0.8rem;
+}
+
+.message .message-header .name {
+  font-size: var(--font-size-lg);
+  font-weight: bold;
+  color: var(--purple-main);
+}
+
+.message .message-header .timestamp {
+  font-size: var(--font-size-sm);
+  color: #888;
+  font-style: italic;
+}
+
+.message .content {
+  font-size: var(--font-size-md);
+  line-height: 1.6;
+  white-space: pre-line;
+}
+

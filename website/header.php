@@ -8,5 +8,6 @@
     <a href="Experience.php">Experience</a>
     <a href="aboutus.php">About us</a>
     <a href="resource_page.php">Resources</a>
+    <a href="guestbook.php">Guestbook</a>
   </nav>
 </header>
