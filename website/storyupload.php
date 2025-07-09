@@ -1,32 +1,17 @@
 <?php
+include 'inc/dbconnect_inc.php';
 // Handle form submission
 if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['submit_story'])) {
     $name = trim($_POST['name']);
     $story = trim($_POST['story']);
-    
     // Basic validation
     if (!empty($name) && !empty($story)) {
-        // Create stories directory if it doesn't exist
-        if (!is_dir('stories')) {
-            mkdir('stories', 0755, true);
-        }
-        
-        // Create a unique filename with timestamp
-        $timestamp = date('Y-m-d_H-i-s');
-        $filename = "stories/story_" . $timestamp . ".txt";
-        
-        // Prepare story content
-        $storyContent = "Name: " . $name . "\n";
-        $storyContent .= "Date: " . date('F j, Y') . "\n";
-        $storyContent .= "Time: " . date('H:i:s') . "\n";
-        $storyContent .= "Story:\n" . $story . "\n";
-        $storyContent .= "---\n";
-        
-        // Write story to file
-        if (file_put_contents($filename, $storyContent) !== false) {
+        try {
+            $stmt = $dbHandler->prepare("INSERT INTO Stories (Name, Story) VALUES (?, ?)");
+            $stmt->execute([$name, $story]);
             $success_message = "Your story has been submitted successfully!";
-        } else {
-            $error_message = "Error saving story. Please try again.";
+        } catch (Exception $ex) {
+            $error_message = "Error saving story: " . $ex->getMessage();
         }
     } else {
         $error_message = "Please fill in both name and story fields.";

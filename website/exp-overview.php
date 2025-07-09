@@ -1,45 +1,12 @@
 <?php
-// Read submitted stories
+include 'inc/dbconnect_inc.php';
+// Fetch submitted stories from the database
 $submitted_stories = [];
-if (is_dir('stories')) {
-    $dirOpen = opendir('stories');
-    while ($curFile = readdir($dirOpen)) {
-        if ($curFile != "." && $curFile != ".." && pathinfo($curFile, PATHINFO_EXTENSION) == 'txt') {
-            $filepath = 'stories/' . $curFile;
-            $content = file_get_contents($filepath);
-            if ($content !== false) {
-                $lines = explode("\n", $content);
-                $storyData = [];
-                $currentStory = "";
-                $readingStory = false;
-                foreach ($lines as $line) {
-                    if (strpos($line, 'Name: ') === 0) {
-                        $storyData['name'] = substr($line, 6);
-                    } elseif (strpos($line, 'Date: ') === 0) {
-                        $storyData['date'] = substr($line, 6);
-                    } elseif (strpos($line, 'Time: ') === 0) {
-                        $storyData['time'] = substr($line, 6);
-                    } elseif ($line === 'Story:') {
-                        $readingStory = true;
-                    } elseif ($line === '---') {
-                        $readingStory = false;
-                        $storyData['story'] = trim($currentStory);
-                        break;
-                    } elseif ($readingStory) {
-                        $currentStory .= $line . "\n";
-                    }
-                }
-                if (!empty($storyData['name']) && !empty($storyData['story'])) {
-                    $submitted_stories[] = $storyData;
-                }
-            }
-        }
-    }
-    closedir($dirOpen);
-    // Sort stories by date (newest first)
-    usort($submitted_stories, function($a, $b) {
-        return strtotime($b['date'] . ' ' . $b['time']) - strtotime($a['date'] . ' ' . $a['time']);
-    });
+try {
+    $stmt = $dbHandler->query("SELECT Name, Story FROM Stories ORDER BY ID DESC");
+    $submitted_stories = $stmt->fetchAll(PDO::FETCH_ASSOC);
+} catch (Exception $ex) {
+    $error_message = "Error loading stories: " . $ex->getMessage();
 }
 ?>
 <!DOCTYPE html>
@@ -56,17 +23,19 @@ if (is_dir('stories')) {
     <main class="subpage-main">
         <h1 class="subpage-title">Community Stories</h1>
         <div class="submitted-stories">
+            <?php if (isset($error_message)): ?>
+                <div class="message error"><?php echo htmlspecialchars($error_message); ?></div>
+            <?php endif; ?>
             <?php if (empty($submitted_stories)): ?>
                 <p style="text-align: center; color: #666; font-style: italic;">No stories have been shared yet. Be the first to share your story!</p>
             <?php else: ?>
                 <?php foreach ($submitted_stories as $story): ?>
                     <div class="story-item">
                         <div class="story-header">
-                            <span class="story-author"><?php echo htmlspecialchars($story['name']); ?></span>
-                            <span class="story-date"><?php echo htmlspecialchars($story['date']); ?></span>
+                            <span class="story-author"><?php echo htmlspecialchars($story['Name']); ?></span>
                         </div>
                         <div class="story-content">
-                            <?php echo nl2br(htmlspecialchars($story['story'])); ?>
+                            <?php echo nl2br(htmlspecialchars($story['Story'])); ?>
                         </div>
                     </div>
                 <?php endforeach; ?>
