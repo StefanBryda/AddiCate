@@ -1,27 +1,23 @@
 <?php
-// Handle form submission
+// Handle form submission for new stories (if used)
 if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['submit_story'])) {
     $name = trim($_POST['name']);
     $story = trim($_POST['story']);
-    
     // Basic validation
     if (!empty($name) && !empty($story)) {
         // Create stories directory if it doesn't exist
         if (!is_dir('stories')) {
             mkdir('stories', 0755, true);
         }
-        
         // Create a unique filename with timestamp
         $timestamp = date('Y-m-d_H-i-s');
         $filename = "stories/story_" . $timestamp . ".txt";
-        
         // Prepare story content
         $storyContent = "Name: " . $name . "\n";
         $storyContent .= "Date: " . date('F j, Y') . "\n";
         $storyContent .= "Time: " . date('H:i:s') . "\n";
         $storyContent .= "Story:\n" . $story . "\n";
         $storyContent .= "---\n";
-        
         // Write story to file
         if (file_put_contents($filename, $storyContent) !== false) {
             $success_message = "Your story has been submitted successfully!";
@@ -33,7 +29,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['submit_story'])) {
     }
 }
 
-// Read submitted stories
+// Read submitted stories from the 'stories' folder
 $submitted_stories = [];
 if (is_dir('stories')) {
     $dirOpen = opendir('stories');
@@ -46,7 +42,7 @@ if (is_dir('stories')) {
                 $storyData = [];
                 $currentStory = "";
                 $readingStory = false;
-                
+                // Parse each line to get story details
                 foreach ($lines as $line) {
                     if (strpos($line, 'Name: ') === 0) {
                         $storyData['name'] = substr($line, 6);
@@ -64,7 +60,7 @@ if (is_dir('stories')) {
                         $currentStory .= $line . "\n";
                     }
                 }
-                
+                // Only add stories with both name and content
                 if (!empty($storyData['name']) && !empty($storyData['story'])) {
                     $submitted_stories[] = $storyData;
                 }
@@ -72,7 +68,6 @@ if (is_dir('stories')) {
         }
     }
     closedir($dirOpen);
-    
     // Sort stories by date (newest first)
     usort($submitted_stories, function($a, $b) {
         return strtotime($b['date'] . ' ' . $b['time']) - strtotime($a['date'] . ' ' . $a['time']);
@@ -85,19 +80,18 @@ if (is_dir('stories')) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link to main and page-specific CSS -->
     <link href="./styleSheets/mainStyle.css" type="text/css" rel="stylesheet">
     <link href="./styleSheets/exp-storypage.css" type="text/css" rel="stylesheet">
     <title>Stories</title>
 </head>
 
 <body>
-
     <?php include 'header.php'; ?>
-
-    <!-- Removed back arrow as requested -->
-
+    <!-- Main content: card grid for story actions -->
     <main class="subpage-main">
         <section class="card-grid">
+            <!-- Card for sharing a new story -->
             <div class="card" data-story-id="story-upload">
                 <a href="storyupload.php" class="card-link">
                     <img src="./images/share-your-story.png" alt="Share Your Story">
@@ -109,6 +103,7 @@ if (is_dir('stories')) {
                     </div>
                 </a>
             </div>
+            <!-- Card for viewing shared stories -->
             <div class="card" data-story-id="shared-stories">
                 <a href="exp-overview.php" class="card-link">
                     <img src="./images/puzzle.jpeg" alt="Shared Stories">
@@ -120,6 +115,7 @@ if (is_dir('stories')) {
                     </div>
                 </a>
             </div>
+            <!-- Card for upcoming features -->
             <div class="card" data-story-id="coming-soon">
                 <a href="#" class="card-link" tabindex="-1" style="pointer-events: none;">
                     <img src="./images/coming soon.jpg" alt="Coming Soon">
@@ -133,12 +129,8 @@ if (is_dir('stories')) {
             </div>
         </section>
     </main>
-
-
     <?php include 'footer.php'; ?>
-
+    <!-- Script for card hover/expand (if needed) -->
     <script src="./js/storyToggle.js"></script>
-
 </body>
-
 </html>
