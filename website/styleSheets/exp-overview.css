@@ -11,7 +11,7 @@
 .story-item {
     background: var(--primary-bg);
     border-radius: var(--generalborder);
-    box-shadow: 0 0 16px 4px var(--green-main), 0 2px 12px rgba(20, 143, 124, 0.10);
+    box-shadow: 0 0 16px 4px var(--text-box), 0 2px 12px rgba(20, 143, 124, 0.10);
     padding: 2rem;
     font-family: var(--font-main);
     font-size: var(--font-size-md);
@@ -88,8 +88,49 @@
     text-decoration: underline;
 }
 
+.story-search-bar {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    z-index: 100;
+    margin-top: 0;
+}
+
+.story-search-bar input[type="text"] {
+    padding: 0.6rem 1.1rem;
+    border: 1.5px solid var(--green-main);
+    border-radius: 7px;
+    font-size: 1.05rem;
+    font-family: var(--font-main);
+    outline: none;
+    transition: border 0.2s;
+    background: #f8fffc;
+    color: var(--green-main);
+    min-width: 180px;
+}
+
+.story-search-bar input[type="text"]:focus {
+    border: 2px solid var(--purple-main);
+}
+
+.story-search-bar button {
+    background: var(--purple-main);
+    color: #fff;
+    border: none;
+    border-radius: 7px;
+    padding: 0.6rem 1.2rem;
+    font-size: 1.05rem;
+    font-family: var(--font-main);
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.story-search-bar button:hover {
+    background: #5e3e8c;
+}
+
 .section-title {
-    color: var(--purple-main);
+    color: #000 !important;
     text-align: center;
     font-size: 2.5rem;
     font-weight: bold;

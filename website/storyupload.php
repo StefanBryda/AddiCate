@@ -10,6 +10,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['submit_story'])) {
             $stmt = $dbHandler->prepare("INSERT INTO Stories (Name, Story) VALUES (?, ?)");
             $stmt->execute([$name, $story]);
             $success_message = "Your story has been submitted successfully!";
+            unset($_POST['name'], $_POST['story']);
         } catch (Exception $ex) {
             $error_message = "Error saving story: " . $ex->getMessage();
         }
@@ -34,7 +35,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['submit_story'])) {
         <h1 class="subpage-title">Share Your Story</h1>
         <!-- Story Submission Form -->
         <div class="story-form-container">
-            <h2 class="section-title">Share Your Story</h2>
             <?php if (isset($success_message)): ?>
                 <div class="message success"><?php echo htmlspecialchars($success_message); ?></div>
             <?php endif; ?>
