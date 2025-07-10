@@ -17,7 +17,6 @@ try {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Link to main and page-specific CSS -->
     <link href="./styleSheets/mainStyle.css" type="text/css" rel="stylesheet">
     <link href="./styleSheets/exp-overview.css" type="text/css" rel="stylesheet">
     <title>Community Stories Overview</title>
@@ -36,7 +35,6 @@ try {
         <a href="exp-story.php" class="back-arrow" aria-label="Back to Story Menu">&#8592; Back</a>
     </div>
     <main class="subpage-main">
-        <!-- Page title -->
         <h1 class="section-title">Stories</h1>
         <!-- List of submitted stories -->
         <div class="submitted-stories">
@@ -63,7 +61,7 @@ try {
         </div>
     </main>
     <?php include 'footer.php'; ?>
-    <!-- Simple search script: shows stories by name after clicking Search -->
+    <!-- Simple search script: shows stories by name (after clicking Search) -->
     <script>
     function filterStories() {
         const input = document.getElementById('storySearchInput').value.toLowerCase();

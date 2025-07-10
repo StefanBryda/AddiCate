@@ -2,7 +2,7 @@
 // Connect to the database
 include 'inc/dbconnect_inc.php';
 
-// Handle form submission when the user clicks 'Submit Story'
+// Handle form submission when 
 if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['submit_story'])) {
     $name = trim($_POST['name']); // Get the name from the form
     $story = trim($_POST['story']); // Get the story from the form
@@ -29,7 +29,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['submit_story'])) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Link to main and page-specific CSS -->
     <link href="./styleSheets/mainStyle.css" type="text/css" rel="stylesheet">
     <link href="./styleSheets/storyupload.css" type="text/css" rel="stylesheet">
     <title>Share Your Story</title>
@@ -39,7 +38,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['submit_story'])) {
     <!-- Back arrow to return to the previous page -->
     <a href="exp-story.php" class="back-arrow" aria-label="Back to Story Menu">&#8592; Back</a>
     <main class="subpage-main">
-        <!-- Page title -->
         <h1 class="subpage-title">Share Your Story</h1>
         <!-- Story Submission Form -->
         <div class="story-form-container">

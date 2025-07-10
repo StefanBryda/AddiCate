@@ -1,5 +1,5 @@
 <?php
-// Handle form submission for new stories (if used)
+// Handle form submission for new stories 
 if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['submit_story'])) {
     $name = trim($_POST['name']);
     $story = trim($_POST['story']);
@@ -42,7 +42,7 @@ if (is_dir('stories')) {
                 $storyData = [];
                 $currentStory = "";
                 $readingStory = false;
-                // Parse each line to get story details
+                // Check each line to get story details
                 foreach ($lines as $line) {
                     if (strpos($line, 'Name: ') === 0) {
                         $storyData['name'] = substr($line, 6);
@@ -80,7 +80,6 @@ if (is_dir('stories')) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Link to main and page-specific CSS -->
     <link href="./styleSheets/mainStyle.css" type="text/css" rel="stylesheet">
     <link href="./styleSheets/exp-storypage.css" type="text/css" rel="stylesheet">
     <title>Stories</title>
@@ -130,7 +129,7 @@ if (is_dir('stories')) {
         </section>
     </main>
     <?php include 'footer.php'; ?>
-    <!-- Script for card hover/expand (if needed) -->
+    <!-- Script for card hover/expand  -->
     <script src="./js/storyToggle.js"></script>
 </body>
 </html>
