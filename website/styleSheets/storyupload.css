@@ -65,4 +65,25 @@
     background: #f8d7da;
     color: #721c24;
     border: 1px solid #f5c6cb;
+}
+
+.back-arrow {
+    position: absolute;
+    top: calc(60px + 1.5rem); /* below the fixed header */
+    left: 2rem;
+    font-size: 1.3rem;
+    color: #7F55B1;
+    text-decoration: none;
+    font-weight: normal;
+    background: none;
+    border: none;
+    z-index: 1100;
+    transition: color 0.2s;
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+}
+.back-arrow:hover, .back-arrow:focus {
+    color: #148F7C;
+    text-decoration: underline;
 } 

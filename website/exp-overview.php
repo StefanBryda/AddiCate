@@ -20,8 +20,9 @@ try {
 </head>
 <body>
     <?php include 'header.php'; ?>
+    <a href="exp-story.php" class="back-arrow" aria-label="Back to Story Menu">&#8592; Back</a>
     <main class="subpage-main">
-        <h1 class="subpage-title">Community Stories</h1>
+        <h1 class="section-title">Stories</h1>
         <div class="submitted-stories">
             <?php if (isset($error_message)): ?>
                 <div class="message error"><?php echo htmlspecialchars($error_message); ?></div>

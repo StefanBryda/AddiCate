@@ -1,8 +1,36 @@
+.back-arrow {
+    position: absolute;
+    top: calc(60px + 1.5rem); /* below the fixed header */
+    left: 2rem;
+    font-size: 2rem;
+    color: var(--purple-main);
+    text-decoration: none;
+    font-weight: bold;
+    background: none;
+    border: none;
+    z-index: 1100;
+    transition: color 0.2s;
+}
+.back-arrow:hover, .back-arrow:focus {
+    color: var(--green-main);
+    text-decoration: underline;
+}
+
 .subpage-main {
-    padding: 4rem 2rem;
+    padding-top: calc(4rem + 60px);
+    padding-bottom: 4rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
     max-width: 1200px;
     margin: 0 auto;
     text-align: center;
+}
+
+.subpage-main > *:first-child {
+    margin-top: 0 !important;
+}
+.subpage-main > *:last-child {
+    margin-bottom: 0 !important;
 }
 
 .subpage-title {

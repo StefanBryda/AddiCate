@@ -29,6 +29,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['submit_story'])) {
 </head>
 <body>
     <?php include 'header.php'; ?>
+    <a href="exp-story.php" class="back-arrow" aria-label="Back to Story Menu">&#8592; Back</a>
     <main class="subpage-main">
         <h1 class="subpage-title">Share Your Story</h1>
         <!-- Story Submission Form -->

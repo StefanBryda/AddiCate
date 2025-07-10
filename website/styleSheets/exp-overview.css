@@ -1,29 +1,44 @@
 /* Styles for exp-overview.php (community stories overview) */
 
 .submitted-stories {
-    max-width: 800px;
+    max-width: 700px;
     margin: 2rem auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
 }
 
 .story-item {
-    background: white;
-    padding: 1.5rem;
-    margin-bottom: 1rem;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    border-left: 4px solid #007bff;
+    background: var(--primary-bg);
+    border-radius: var(--generalborder);
+    box-shadow: 0 0 16px 4px var(--green-main), 0 2px 12px rgba(20, 143, 124, 0.10);
+    padding: 2rem;
+    font-family: var(--font-main);
+    font-size: var(--font-size-md);
+    color: var(--green-main);
+    text-align: left;
+    margin: 0 auto;
+    width: 100%;
+    min-width: 320px;
+    max-width: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    min-height: 120px;
+    max-height: 700px;
+    box-sizing: border-box;
 }
 
 .story-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    font-weight: bold;
+    color: var(--green-main);
+    font-size: var(--font-size-md);
     margin-bottom: 1rem;
 }
 
 .story-author {
     font-weight: bold;
-    color: #007bff;
+    color: var(--green-main);
     font-size: 1.1rem;
 }
 
@@ -33,13 +48,144 @@
 }
 
 .story-content {
-    line-height: 1.6;
-    color: #333;
+    background: var(--text-box);
+    border-radius: calc(var(--generalborder) * 1.5);
+    box-shadow: 0 2px 8px var(--green-shadow);
+    padding: 1.2rem 1.2rem;
+    width: 100%;
+    flex: 1 1 auto;
+    overflow-y: auto;
+    margin: 0;
+    white-space: pre-line;
+    word-break: break-word;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    font-family: var(--font-main);
+    font-size: var(--font-size-md);
+    color: var(--text-light);
+    min-height: 80px;
+    max-height: 400px;
+}
+
+.story-content h2 {
+    margin-bottom: 1.5rem;
+    color: #148F7C;
+    text-align: center;
+}
+
+.story-back {
+    text-align: center;
+    margin-top: 1.5rem;
+}
+.story-back a {
+    color: #5a2d82;
+    text-decoration: none;
+    font-weight: bold;
+}
+.story-back a:hover {
+    text-decoration: underline;
 }
 
 .section-title {
+    color: var(--purple-main);
     text-align: center;
-    margin: 2rem 0 1rem 0;
-    color: #333;
-    font-size: 1.5rem;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 2.5rem 0 2.5rem 0;
+    letter-spacing: 0.05em;
+    font-family: var(--font-main);
+}
+
+.story-viewer {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh;
+}
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 4rem;
+    color: #e74c3c;
+    font-family: 'Comic Sans MS', 'Comic Sans', cursive, sans-serif;
+    text-decoration: none;
+    user-select: none;
+    transition: color 0.2s, transform 0.2s;
+    line-height: 1;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 2;
+}
+.arrow.left {
+    left: -80px;
+}
+.arrow.right {
+    right: -80px;
+}
+.arrow:hover {
+    color: #c0392b;
+    transform: translateY(-50%) scale(1.15);
+}
+
+.subpage-main {
+    padding-top: calc(4rem + 60px);
+    padding-bottom: 4rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.subpage-main > *:first-child {
+    margin-top: 0 !important;
+}
+.subpage-main > *:last-child {
+    margin-bottom: 0 !important;
+}
+
+.back-arrow {
+    position: absolute;
+    top: calc(60px + 1.5rem); /* below the fixed header */
+    left: 2rem;
+    font-size: 1.3rem;
+    color: var(--purple-main);
+    text-decoration: none;
+    font-weight: normal;
+    background: none;
+    border: none;
+    z-index: 1100;
+    transition: color 0.2s;
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+}
+.back-arrow:hover, .back-arrow:focus {
+    color: var(--green-main);
+    text-decoration: underline;
+}
+
+@media (max-width: 900px) {
+    .submitted-stories, .story-item {
+        max-width: 98vw;
+        padding: 1rem;
+        min-height: 80px;
+        max-height: 400px;
+    }
+    .arrow.left {
+        left: -40px;
+    }
+    .arrow.right {
+        right: -40px;
+    }
+    .story-content {
+        padding: 0.7rem;
+        min-height: 60px;
+        max-height: 220px;
+    }
 } 

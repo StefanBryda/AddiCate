@@ -94,9 +94,9 @@ if (is_dir('stories')) {
 
     <?php include 'header.php'; ?>
 
-    <main class="subpage-main">
-        <h1 class="subpage-title">Stories</h1>
+    <!-- Removed back arrow as requested -->
 
+    <main class="subpage-main">
         <section class="card-grid">
             <div class="card" data-story-id="story-upload">
                 <a href="storyupload.php" class="card-link">
