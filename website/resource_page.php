@@ -38,9 +38,21 @@
                         <li>NHL Stenden University of Applied Sciences</li>
                         <li>MDT Project - Invisible Heros</li>
                     </ul>
-                    
                 </div>
 
+                <!-- Assets Credits Box -->
+                <div class="credits">
+                    <h3>Game Assets Credits</h3>
+                    <hr>
+                    <ul>
+                        <li>Bedroom: https://www.artstation.com/artwork/ZammZ0</li>
+                        <li>Street: https://free-game-assets.itch.io/free-pixel-art-street-backgrounds</li>
+                        <li>Flowers: https://jf-development-01.itch.io/flowers</li>
+                        <li>Field: https://dinopixel.com/field-backround-pixel-art-30970</li>
+                        <li>Character design: Fabiana Brando</li>
+                    </ul>
+                 </div>
+                
             </div>
 
             <!-- Right Side -->

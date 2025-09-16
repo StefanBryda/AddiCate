@@ -125,7 +125,8 @@ hr {
 /* Box styling */
 .research,
 .org,
-.reference {
+.reference,
+.credits {
     padding: 1.8rem;
     border-radius: 8px;
     box-shadow: var(--green-shadow);
